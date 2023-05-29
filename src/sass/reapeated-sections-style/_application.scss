@@ -24,6 +24,7 @@ button {
     max-width: 329px;
 }
 .application-title {
+    max-width: 312px;
     font-weight: 800;
     font-size: 27px;
     line-height: 1.2;
@@ -72,6 +73,12 @@ button {
 }
 .application-contact {
     color: #df2528;
+    max-width: 239px;
+    margin: 0 auto;
+}
+.contact-application{
+    max-width: 229px;
+    margin: 0 auto;
 }
 .application-line {
     position: relative;
