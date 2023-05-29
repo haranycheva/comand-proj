@@ -17,7 +17,7 @@ button {
 	margin: 0 auto;
 	max-width: 329px;
 }
-.application-title application-text {
+.application-title,.application-text {
 	max-width: 312px;
 	margin: 0 auto;
 	font-weight: 800;
@@ -71,7 +71,7 @@ button {
 		background-color: #df2528;
 	}
 }
-.application-contact-tel {
+.application-contact-tel{
 	color: #df2528;
 	max-width: 329px;
 	margin: 0 auto;
