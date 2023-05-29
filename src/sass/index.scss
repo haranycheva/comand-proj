@@ -1,0 +1,22 @@
+@import './common';
+
+// main page
+@import './main-page-sections-style/burger-menu.scss';
+@import './main-page-sections-style/hero.scss';
+@import './main-page-sections-style/projects.scss';
+@import './main-page-sections-style/proces.scss';
+
+// contacts page
+@import './contacts-page-style/contacts-hero.scss';
+
+// cards page
+@import './cards-style/read-more.scss';
+
+// repeated
+@import './reapeated-sections-style/main-header.scss';
+@import './reapeated-sections-style/application.scss';
+@import './reapeated-sections-style/location.scss';
+@import './reapeated-sections-style/footer.scss';
+@import './reapeated-sections-style/about_contacts-header.scss';
+@import './reapeated-sections-style/about-company_information.scss';
+
