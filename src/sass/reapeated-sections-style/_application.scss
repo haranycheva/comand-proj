@@ -1,11 +1,7 @@
-/*reset*/
 button {
     border: 0;
     cursor: pointer;
     padding: 0;
-}
-a{
-    text-decoration: none;
 }
 /* .application */
 .application {
@@ -38,6 +34,7 @@ a{
     max-width: 300px;
     margin-top: 40px;
     padding-top: 28px;
+    border-bottom: 1px solid #fafafa;
     font-weight: 800;
     font-size: 20px;
     line-height: 1.3;
@@ -50,6 +47,7 @@ a{
     max-width: 300px;
     margin-top: 17px;
     padding-top: 28px;
+    border-bottom: 1px solid #fafafa;
     font-weight: 800;
     font-size: 20px;
     line-height: 1.3;
