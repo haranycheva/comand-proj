@@ -1,6 +1,6 @@
 .logo {
-  width: 62px;
-  height: 62px;
+  width: calc(62px + (62 - 60) * ((100vw - 420px) / (520 - 420)));
+  height: calc(62px + (62 - 60) * ((100vw - 420px) / (520 - 420)));
 }
 .nav {
   display: none;
@@ -8,8 +8,8 @@
 .phone-num {
   font-family: 'Gilroy';
   color: #131926;
-  margin-right:calc(51px + (90 - 51) * ((100vw - 420px) / (520 - 420))) ;
-  margin-left:calc(46px + (90 - 46) * ((100vw - 420px) / (520 - 420)));
+  margin-right: calc(51px + (90 - 51) * ((100vw - 420px) / (520 - 420)));
+  margin-left: calc(46px + (90 - 46) * ((100vw - 420px) / (520 - 420)));
   font-weight: 800;
   font-size: calc(23px + (25 - 23) * ((100vw - 420px) / (520 - 420)));
   line-height: 0.8;
@@ -36,6 +36,7 @@
   outline: transparent;
   border: transparent;
   padding-left: 34px;
+  font-weight: 800;
 }
 .search-form {
   display: none;
@@ -70,8 +71,12 @@
   font-weight: 800;
   font-size: calc(16px + (18 - 16) * ((100vw - 1000px) / (1440 - 1000)));
   line-height: 0.8;
+  color: #131926;
 }
-.nav-menu-item:hover {
+.link {
+  color: #131926;
+}
+.link:hover {
   color: #c12023;
 }
 .order-btn:hover {
@@ -79,8 +84,8 @@
 }
 @media screen and (min-width: 520px) {
   .logo {
-    width: 60px;
-    height: 60px;
+    width: calc(60px + (75 - 60) * ((100vw - 520px) / (740 - 520)));
+    height: calc(60px + (75 - 60) * ((100vw - 520px) / (740 - 520)));
   }
   .phone-num {
     font-weight: 800;
@@ -92,22 +97,21 @@
 }
 @media screen and (min-width: 740px) {
   .logo {
-    width: 75px;
-    height: 75px;
+    width: calc(75px + (80 - 75) * ((100vw - 740px) / (1000 - 740)));
+    height: calc(75px + (80 - 75) * ((100vw - 740px) / (1000 - 740)));
   }
   .phone-num {
     font-weight: 800;
-    font-size: 27px;
+    font-size: calc(27px + (34 - 27) * ((100vw - 740px) / (1000 - 740)));
     line-height: 0.8;
-    margin: 0 196px 0 176px;
     margin-right: calc(196px + (196 - 90) * ((100vw - 740px) / (1000 - 740)));
     margin-left: calc(176px + (176 - 90) * ((100vw - 740px) / (1000 - 740)));
   }
 }
 @media screen and (min-width: 1000px) {
   .logo {
-    width: 80px;
-    height: 80px;
+    width: calc(80px + (100 - 80) * ((100vw - 1000px) / (1440 - 1000)));
+    height: calc(80px + (100 - 80) * ((100vw - 1000px) / (1440 - 1000)));
     margin-right: calc(67px + (100 - 67) * ((100vw - 1000px) / (1440 - 1000)));
   }
   .phone-num {
@@ -133,7 +137,7 @@
   .order-btn {
     display: block;
     padding-top: calc(20px + (22 - 20) * ((100vw - 1000px) / (1440 - 1000)));
-    padding-bottom:calc(20px + (22 - 20) * ((100vw - 1000px) / (1440 - 1000))) ;
+    padding-bottom: calc(20px + (22 - 20) * ((100vw - 1000px) / (1440 - 1000)));
     padding-left: calc(40px + (44 - 40) * ((100vw - 1000px) / (1440 - 1000)));
     padding-right: calc(39px + (44 - 39) * ((100vw - 1000px) / (1440 - 1000)));
     background: #131926;
@@ -153,26 +157,35 @@
   .logo {
     width: 100px;
     height: 100px;
-    margin-right: 100px;
+    margin-right: calc(
+      100px + (130 - 100) * ((100vw - 1440px) / (1600 - 1440))
+    );
   }
   .search-form {
-    width: 200px;
+    width: calc(200px + (220 - 200) * ((100vw - 1440px) / (1600 - 1440)));
   }
   .nav {
-    margin: 0 297px 0 130px;
+    margin-right: calc(
+      297px + (307 - 297) * ((100vw - 1440px) / (1600 - 1440))
+    );
+    margin-left: calc(130px + (140 - 130) * ((100vw - 1440px) / (1600 - 1440)));
   }
   .nav-list {
-    gap: 80px;
+    gap: calc(80px + (95 - 80) * ((100vw - 1440px) / (1600 - 1440)));
   }
   .nav-menu-item {
     font-weight: 800;
-    font-size: 18px;
+    font-size: calc(18px + (21 - 18) * ((100vw - 1440px) / (1600 - 1440)));
     line-height: 0.8;
   }
   .order-btn {
     font-weight: 800;
-    font-size: 18px;
+    font-size: calc(18px + (21 - 18) * ((100vw - 1440px) / (1600 - 1440)));
     line-height: 0.8;
-    padding: 22px 44px 23px;
+    // padding: 22px 44px 23px;
+    padding-top: calc(22px + (28 - 22) * ((100vw - 1440px) / (1600 - 1440)));
+    padding-bottom: calc(22px + (28 - 22) * ((100vw - 1440px) / (1600 - 1440)));
+    padding-right: calc(42px + (53 - 44) * ((100vw - 1440px) / (1600 - 1440)));
+    padding-left: calc(42px + (53 - 44) * ((100vw - 1440px) / (1600 - 1440)));
   }
 }
