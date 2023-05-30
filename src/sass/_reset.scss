@@ -1,4 +1,3 @@
-
 html {
   box-sizing: border-box;
 }
@@ -36,16 +35,20 @@ ul {
 
 body {
   margin: 0;
-  font-family: "Gilroy", "Sans-Serif";
+  font-family: 'Gilroy', 'Sans-Serif';
 }
-
 
 button {
   cursor: pointer;
   padding: 0;
   margin: 0;
 }
-
 a {
   text-decoration: none;
 }
+
+input {
+  padding: 0;
+  margin: 0;
+}
+
