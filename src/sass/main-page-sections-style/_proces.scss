@@ -134,19 +134,18 @@
   }
 
   .proces-section-h {
-    width: 974px;
-    font-size: 100px; // calc(100px + (100 - 80) * ((100vw - 740px) / (1000 - 740)));
+     // calc(100px + (100 - 80) * ((100vw - 740px) / (1000 - 740)));
   }
-  .proces-section-ul-item {
-    font-size: calc(25px + (25 - 23) * ((100vw - 1000px) / (1440 - 1000)));
-  }
+//   .proces-section-ul-item:not(:last-child){
+//     font-size: calc(40px + (40 - 25) * ((100vw - 1000px) / (1440 - 1000)));
+//   }
   .proces-section-ul-item:nth-child(1) {
-    margin-right: calc(87px + (87 - 84) * ((100vw - 1000px) / (1440 - 1000)));
+    margin-right: calc(140px + (140 - 87) * ((100vw - 1000px) / (1440 - 1000)));
   }
   .proces-section-ul-item:nth-child(2) {
-    margin-right: calc(87px + (87 - 60) * ((100vw - 1000px) / (1440 - 1000)));
+    margin-right: calc(240px + (240 - 87) * ((100vw - 1000px) / (1440 - 1000)));
   }
   .proces-section-ul-item:nth-child(3) {
-    margin-right: calc(110px + (110 - 62) * ((100vw - 1000px) / (1440 - 1000)));
+    margin-right: calc(151px + (151 - 110) * ((100vw - 1000px) / (1440 - 1000)));
   }
 }
