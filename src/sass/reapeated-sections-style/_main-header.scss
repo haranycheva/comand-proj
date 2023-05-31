@@ -1,0 +1,187 @@
+.logo {
+  @include responsive(width, 60, 62, 420, 520);
+  @include responsive(height, 60, 62, 420, 520);
+}
+.nav {
+  display: none;
+}
+.phone-num {
+  font-family: 'Gilroy';
+  color: #131926;
+  @include responsive(margin-right, 51, 90, 420, 520);
+  @include responsive(margin-left, 46, 90, 420, 520);
+  font-weight: 800;
+  @include responsive(font-size, 23, 25, 420, 520);
+  line-height: 0.8;
+}
+.phone-num:hover {
+  color: #c12023;
+}
+
+.main-header-container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+.burger-menu {
+  width: 50px;
+  height: 46px;
+}
+.order-btn {
+  display: none;
+}
+.search {
+  padding: 0;
+  width: 141px;
+  outline: transparent;
+  border: transparent;
+  padding-left: 34px;
+  font-weight: 800;
+}
+.search-form {
+  display: none;
+  position: relative;
+  @include responsive(width, 141, 200, 1000, 1440);
+}
+.search::placeholder {
+  color: #131926;
+  font-family: 'Gilroy';
+  font-weight: 800;
+  @include responsive(font-size, 16, 18, 1000, 1440);
+  line-height: 0.8;
+}
+.search-svg {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  display: none;
+  top: -3px;
+  left: 3px;
+}
+.search-form::before {
+  content: ' ';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #131926;
+  top: 33px;
+}
+.nav-menu-item {
+  font-weight: 800;
+  @include responsive(font-size, 16, 18, 1000, 1440);
+  line-height: 0.8;
+  color: #131926;
+}
+.link {
+  color: #131926;
+}
+.link:hover {
+  color: #c12023;
+}
+.order-btn:hover {
+  background: #c12023;
+}
+@media screen and (min-width: 520px) {
+  .logo {
+    @include responsive(width, 60, 75, 520, 740);
+    @include responsive(height, 60, 75, 520, 740);
+  }
+  .phone-num {
+    font-weight: 800;
+    @include responsive(font-size, 25, 27, 520, 740);
+    line-height: 0.8;
+    @include responsive(margin-right, 90, 196, 520, 740);
+    @include responsive(margin-right, 90, 176, 520, 740);
+  }
+}
+@media screen and (min-width: 740px) {
+  .logo {
+    @include responsive(width, 75, 80, 740, 1000);
+    @include responsive(height, 75, 80, 740, 1000);
+  }
+  .phone-num {
+    font-weight: 800;
+
+    @include responsive(font-size, 27, 34, 740, 1000);
+    line-height: 0.8;
+    @include responsive(margin-right, 196, 290, 740, 1000);
+    @include responsive(margin-left, 176, 276, 740, 1000);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .logo {
+    @include responsive(width, 80, 100, 1000, 1440);
+    @include responsive(height, 80, 100, 1000, 1440);
+    @include responsive(margin-right, 67, 100, 1000, 1440);
+  }
+  .phone-num {
+    display: none;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .nav {
+    display: block;
+    @include responsive(margin-left, 72, 130, 1000, 1440);
+    @include responsive(margin-right, 146, 296, 1000, 1440);
+  }
+  .nav-list {
+    display: flex;
+    @include responsive(gap, 50, 80, 1000, 1440);
+  }
+  .search-form {
+    display: block;
+  }
+  .order-btn {
+    display: block;
+    @include responsive(padding-top, 20, 22, 1000, 1440);
+    @include responsive(padding-bottom, 20, 22, 1000, 1440);
+    @include responsive(padding-left, 40, 44, 1000, 1440);
+    @include responsive(padding-right, 39, 44, 1000, 1440);
+    background: #131926;
+    border-radius: 29px;
+    color: #fafafa;
+    font-family: 'Gilroy';
+    border: transparent;
+    font-weight: 800;
+    @include responsive(font-size, 16, 18, 1000, 1440);
+    line-height: 0.8;
+  }
+  .search-svg {
+    display: block;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .logo {
+    width: 100px;
+    height: 100px;
+    @include responsive(margin-right, 100, 130, 1440, 1600);
+  }
+  .search-form {
+    @include responsive(width, 200, 220, 1440, 1600);
+  }
+  .nav {
+    @include responsive(margin-right, 297, 307, 1440, 1600);
+    @include responsive(margin-left, 130, 140, 1440, 1600);
+  }
+  .nav-list {
+    @include responsive(gap, 80, 95, 1440, 1600);
+  }
+  .nav-menu-item {
+    font-weight: 800;
+
+    @include responsive(font-size, 18, 21, 1440, 1600);
+    line-height: 0.8;
+  }
+  .order-btn {
+    font-weight: 800;
+
+    @include responsive(font-size, 18, 21, 1440, 1600);
+    line-height: 0.8;
+    @include responsive(padding-top, 22, 28, 1440, 1600);
+    @include responsive(padding-bottom, 22, 28, 1440, 1600);
+    @include responsive(padding-left, 42, 53, 1440, 1600);
+    @include responsive(padding-right, 42, 53, 1440, 1600);
+  }
+}
