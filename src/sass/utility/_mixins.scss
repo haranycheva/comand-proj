@@ -1,0 +1,3 @@
+@mixin responsive ($property, $minSise, $maxSize, $smallerBrakpoint, $biggerBrekpoint){
+  #{$property}: calc(#{$minSize + px} + ($maxSize - $minSize) * ((100vw - #{$smallerBrakpoint + px}) / ($biggerBrekpoint - $smallerBrakpoint)))
+}
