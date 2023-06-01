@@ -10,12 +10,12 @@ button {
   text-align: center;
   background-color: #131926;
   box-sizing: border-box;
-  padding: 50px;
+  padding: 46px;
 }
 .application-container {
   margin: 0 auto;
   box-sizing: border-box;
-  max-width: 428px;
+  max-width: 420px;
   width: 100%;
 }
 .application-title {
@@ -96,45 +96,45 @@ button {
 }
 @media (min-width: 520px) {
   .application {
-    @include responsive(padding-left, 27, 50, 740, 428);
-    @include responsive(padding-top, 65, 50, 740, 428);
-    @include responsive(padding-right, 27, 50, 740, 428);
-    @include responsive(padding-bottom, 65, 50, 740, 428);
+    @include responsive(padding-left, 27, 46, 740, 420);
+    @include responsive(padding-top, 65, 46, 740, 420);
+    @include responsive(padding-right, 27, 46, 740, 420);
+    @include responsive(padding-bottom, 65, 46, 740, 420);
   }
   .application-container {
-    @include responsive(max-width, 467, 428, 740, 428);
+    @include responsive(max-width, 467, 420, 740, 420);
   }
   .application-title {
-    @include responsive(max-width, 422, 312, 740, 428);
+    @include responsive(max-width, 422, 312, 740, 420);
   }
   .application-title,
   .application-text {
-    @include responsive(font-size, 35, 27, 740, 428);
+    @include responsive(font-size, 35, 27, 740, 420);
   }
   .application-form {
-    @include responsive(margin-bottom, 65, 68, 740, 428);
+    @include responsive(margin-bottom, 65, 68, 740, 420);
   }
   .application-name,
   .application-tel {
-    @include responsive(width, 480, 300, 740, 428);
-    @include responsive(margin-top, 50, 45, 740, 428);
-    @include responsive(padding-bottom, 30, 28, 740, 428);
-    @include responsive(font-size, 25, 20, 740, 428);
+    @include responsive(width, 480, 300, 740, 420);
+    @include responsive(margin-top, 50, 45, 740, 420);
+    @include responsive(padding-bottom, 30, 28, 740, 420);
+    @include responsive(font-size, 25, 20, 740, 420);
     line-height: 1.2;
   }
   .application-name {
-    @include responsive(margin-top, 65, 68, 740, 428);
+    @include responsive(margin-top, 65, 68, 740, 420);
   }
   .application-submit {
-    @include responsive(margin-top, 50, 45, 740, 428);
-    @include responsive(width, 461, 300, 740, 428);
+    @include responsive(margin-top, 50, 45, 740, 420);
+    @include responsive(width, 461, 300, 740, 420);
     height: 58px;
   }
   .application-contact-tel {
-    @include responsive(max-width, 298, 384, 740, 428);
+    @include responsive(max-width, 298, 384, 740, 420);
   }
   .contact-application {
-    @include responsive(max-width,467, 298,  740, 428);
+    @include responsive(max-width,467, 298,  740, 420);
   }
 }
 @media (min-width: 740px) {
