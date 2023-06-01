@@ -288,10 +288,10 @@ button {
     line-height: 1.2;
   }
   .application-contact-tel {
-    @include responsive(max-width, 1058, 811, 1440, 740);
+    @include responsive(max-width, 1058, 811, 1600, 1000);
   }
   .contact-application {
-    @include responsive(max-width, 1058, 811, 1440, 740);
-    @include responsive(margin, 0, 0, 1440, 740);
+    @include responsive(max-width, 1058, 811, 1600, 1000);
+    @include responsive(margin, 0, 0, 1600, 1000);
   }
 }
