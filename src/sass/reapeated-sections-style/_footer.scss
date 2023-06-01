@@ -1,0 +1,391 @@
+.footer {
+  background-color: #131926;
+  position: relative;
+  width: 100%;
+}
+.search-media {
+  display: none;
+}
+.footer-container {
+  @include responsive(max-width, 420, 520, 420, 520);
+  margin: 0 auto;
+  @include responsive(padding-top, 76, 59, 420, 520);
+  @include responsive(padding-right, 72, 31, 420, 520);
+  @include responsive(padding-left, 58, 31, 420, 520);
+  @include responsive(padding-bottom, 64, 51, 420, 520);
+}
+.footer-link:hover{
+  color: #c12023;
+}
+.footer-info {
+  display: flex;
+  align-items: center;
+  @include responsive(gap, 61, 147, 420, 520);
+}
+.footer-nav-menu-item {
+  font-weight: 800;
+  @include responsive(font-size, 20, 30, 420, 520);
+  @include responsive(line-height, 14, 21, 420, 520);
+}
+.footer-link {
+  color: #fafafa;
+  font-weight: 800;
+}
+.footer-nav-menu-item + .footer-nav-menu-item {
+  @include responsive(margin-top, 30, 35, 420, 520);
+}
+.footer-logo {
+  @include responsive(width, 100, 175, 420, 520);
+  @include responsive(height, 100, 175, 420, 520);
+}
+.footer-nav-menu-item:hover {
+  color: #c12023;
+}
+.footer-number:hover {
+  color: #c12023;
+}
+.footer-location {
+  color: #fafafa;
+  font-weight: 800;
+  @include responsive(font-size, 20, 30, 420, 520);
+  @include responsive(margin-top, 91, 86, 420, 520);
+}
+.numbers {
+  @include responsive(margin-top, 30, 35, 420, 520);
+}
+.footer-number {
+  color: #fafafa;
+  font-weight: 800;
+  @include responsive(font-size, 20, 30, 420, 520);
+  @include responsive(margin-top, 30, 35, 420, 520);
+}
+.phones-footer + .phones-footer {
+  @include responsive(margin-top, 30, 35, 420, 520);
+}
+.footer-search::placeholder {
+  color: #b7b8bc;
+  font-family: 'Gilroy';
+  font-weight: 800;
+  line-height: 0.8;
+
+  @include responsive(font-size, 20, 30, 420, 520);
+}
+.footer-search {
+  padding: 0;
+  outline: transparent;
+  border: transparent;
+  @include responsive(padding-left, 34, 50, 420, 520);
+  font-weight: 800;
+  color: #b7b8bc;
+  background-color: transparent;
+}
+.footer-search-form::before {
+  content: ' ';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #fafafa;
+  @include responsive(top, 37, 65, 420, 520);
+}
+.footer-search-form {
+  position: relative;
+  display: flex;
+  text-align: center;
+  @include responsive(height, 38, 66, 420, 520);
+
+  @include responsive(margin-top, 60, 83, 420, 520);
+  @include responsive(width, 227, 430, 420, 520);
+}
+.footer-search-svg {
+  @include responsive(width, 24, 45, 420, 520);
+  @include responsive(height, 24, 45, 420, 520);
+  position: absolute;
+  top: -6px;
+  @include responsive(top, 4, 4, 420, 520);
+  left: 3px;
+}
+.youtube {
+  @include responsive(width, 22, 46, 420, 520);
+  @include responsive(height, 17, 41, 420, 520);
+}
+.instagram {
+  @include responsive(width, 20, 44, 420, 520);
+  @include responsive(height, 20, 44, 420, 520);
+}
+.social-list {
+  @include responsive(margin-top, 20, 35, 420, 520);
+  display: flex;
+  @include responsive(gap, 30, 50, 420, 520);
+}
+.icon-link-footer {
+  display: block;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  @include responsive(width, 38, 62, 420, 520);
+  @include responsive(height, 38, 62, 420, 520);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media-footer {
+  font-weight: 800;
+  @include responsive(font-size, 20, 30, 420, 520);
+  color: #fafafa;
+  @include responsive(margin-top, 35, 59, 420, 520);
+}
+.conf-user-info {
+  @include responsive(margin-top, 61, 84, 420, 520);
+}
+.consf-user-info-item {
+  color: #d9d9d9;
+  font-weight: 300;
+  font-size: 16px;
+}
+.consf-user-info-item + .consf-user-info-item {
+  margin-top: 30px;
+}
+.youtube-svg:hover {
+  background-color: #df2528;
+  fill: #fcfcfc;
+}
+.instagram-svg:hover {
+  background-color: #a06c6d;
+  fill: #fcfcfc;
+}
+.scroll {
+  color: #fafafa;
+  width: 59px;
+  height: 59px;
+  position: absolute;
+  border-radius: 50%;
+  padding: 22px 18px 24px;
+  border: none;
+  top: 0;
+  transform: translateY(-50%);
+  @include responsive(right, 59, 30, 420, 520);
+}
+.scroll-up-svg {
+  width: 23px;
+  height: 13px;
+}
+@media screen and (min-width: 520px) {
+  .footer-container {
+    @include responsive(max-width, 520, 740, 520, 740);
+    @include responsive(padding-top, 59, 58, 520, 740);
+    @include responsive(padding-right, 31, 51, 520, 740);
+    @include responsive(padding-left, 31, 61, 520, 740);
+    @include responsive(padding-bottom, 51, 46, 520, 740);
+  }
+  .footer-info {
+    @include responsive(gap, 147, 65, 520, 740);
+  }
+  .footer-logo {
+    @include responsive(width, 175, 109, 520, 740);
+    @include responsive(height, 175, 109, 520, 740);
+  }
+  .footer-nav-menu-item {
+    @include responsive(font-size, 30, 20, 520, 740);
+    @include responsive(line-height, 21, 14, 520, 740);
+  }
+  .footer-nav-menu-item + .footer-nav-menu-item {
+    @include responsive(margin-top, 35, 30, 520, 740);
+  }
+  .footer-location {
+    @include responsive(font-size, 30, 20, 520, 740);
+    @include responsive(margin-top, 86, 0, 520, 740);
+  }
+  .numbers {
+    @include responsive(margin-top, 35, 30, 520, 740);
+  }
+  .footer-number {
+    @include responsive(font-size, 30, 20, 520, 740);
+  }
+  .phones-footer + .phones-footer {
+    @include responsive(margin-top, 35, 30, 520, 740);
+  }
+  .footer-search::placeholder {
+    @include responsive(font-size, 30, 20, 520, 740);
+  }
+  .footer-search {
+    @include responsive(padding-left, 50, 38, 520, 740);
+  }
+  .footer-search-form::before {
+    @include responsive(top, 65, 37, 520, 740);
+  }
+  .footer-search-form {
+    @include responsive(height, 66, 38, 520, 740);
+    @include responsive(margin-top, 83, 0, 520, 740);
+    @include responsive(width, 430, 227, 520, 740);
+  }
+  .footer-search-svg {
+    @include responsive(width, 45, 24, 520, 740);
+    @include responsive(height, 45, 24, 520, 740);
+    @include responsive(top, 4, 4, 520, 740);
+  }
+  .youtube {
+    @include responsive(width, 46, 23, 520, 740);
+    @include responsive(height, 41, 13, 520, 740);
+  }
+  .instagram {
+    @include responsive(width, 44, 20, 520, 740);
+    @include responsive(height, 44, 20, 520, 740);
+  }
+  .social-list {
+    @include responsive(margin-top, 35, 20, 520, 740);
+    @include responsive(gap, 50, 30, 520, 740);
+  }
+  .icon-link-footer {
+    @include responsive(width, 62, 38, 520, 740);
+    @include responsive(height, 62, 38, 520, 740);
+  }
+  .social-media-footer {
+    @include responsive(font-size, 30, 20, 520, 740);
+    @include responsive(margin-top, 59, 38, 520, 700);
+  }
+  .conf-user-info {
+    @include responsive(margin-top, 84, 0, 520, 740);
+  }
+  .scroll {
+    @include responsive(right, 30, 63, 520, 740);
+  }
+}
+@media screen and (min-width: 740px) {
+  .footer-container {
+    @include responsive(max-width, 740, 1000, 740, 1000);
+    @include responsive(padding-top, 58, 62, 740, 1000);
+    @include responsive(padding-right, 51, 32, 740, 1000);
+    @include responsive(padding-left, 61, 32, 740, 1000);
+    @include responsive(padding-bottom, 46, 48, 740, 1000);
+  }
+  .location-cont {
+    display: flex;
+    align-items: center;
+    @include responsive(gap, 65, 58, 740, 1000);
+  }
+  .user-info {
+    margin-top: 70px;
+    display: flex;
+    gap: 101px;
+  }
+  .footer-info {
+    @include responsive(gap, 65, 58, 740, 1000);
+  }
+  .footer-logo {
+    @include responsive(width, 109, 144, 740, 1000);
+    @include responsive(height, 109, 144, 740, 1000);
+  }
+  .footer-nav-menu-item {
+    font-size: 20px;
+    line-height: 0.7;
+  }
+  .footer-nav-menu-item + .footer-nav-menu-item {
+    margin-top: 30px;
+  }
+  .footer-location {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  .numbers {
+    margin-top: 30px;
+  }
+  .footer-number {
+    font-size: 20px;
+  }
+  .phones-footer + .phones-footer {
+    margin-top: 30px;
+  }
+  .footer-search::placeholder {
+    font-size: 20px;
+  }
+  .footer-search {
+    padding-left: 38px;
+  }
+  .footer-search-form::before {
+    top: 37px;
+  }
+  .footer-search-form {
+    height: 38px;
+    margin-top: 0;
+    @include responsive(width, 227, 257, 740, 1000);
+  }
+  .footer-search-svg {
+    width: 24px;
+    height: 24px;
+    top: 4px;
+  }
+  .youtube {
+    width: 23px;
+    height: 13px;
+  }
+  .instagram {
+    width: 20px;
+    height: 20px;
+  }
+  .social-list {
+    margin-top: 20px;
+    gap: 30px;
+  }
+  .icon-link-footer {
+    width: 38px;
+    height: 38px;
+  }
+  .social-media-footer {
+    font-size: 20px;
+    margin-top: 38px;
+  }
+  .conf-user-info {
+    margin-top: 0;
+  }
+  .scroll {
+    @include responsive(right, 63, 33, 740, 1000);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .footer-container {
+    @include responsive(max-width, 1000, 1440, 1000, 1440);
+    @include responsive(padding-top, 62, 58, 1000, 1440);
+    @include responsive(padding-right, 32, 143, 1000, 1440);
+    @include responsive(padding-left, 32, 140, 1000, 1440);
+    @include responsive(padding-bottom, 48, 43, 1000, 1440);
+  }
+  .location-cont {
+    @include responsive(gap, 58, 100, 1000, 1440);
+  }
+  .footer-location{
+    width: 299px;
+  }
+  .user-info {
+    @include responsive(margin-top, 62, 69, 1000, 1440);
+    display: block;
+  }
+  .conf-user-info {
+    display: flex;
+    align-items: center;
+    @include responsive(gap, 112, 261, 1000, 1440);
+  }
+  .consf-user-info-item + .consf-user-info-item{
+    margin-top: 0;
+  }
+  .footer-info {
+    @include responsive(gap, 58, 109, 1000, 1440);
+  }
+  .footer-logo {
+    @include responsive(width, 144, 200, 1000, 1440);
+    @include responsive(height, 144, 200, 1000, 1440);
+  }
+  .scroll {
+    @include responsive(right, 33, 140, 1000, 1440);
+  }
+  .location-search-cont {
+    display: flex;
+    align-items: center;
+    @include responsive(gap, 58, 97, 1000, 1440);
+  }
+  .social-search {
+    display: none;
+  }
+  .search-media {
+    display: block;
+  }
+}
