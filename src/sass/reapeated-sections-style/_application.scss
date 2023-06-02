@@ -35,10 +35,11 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include responsive(margin-top, 68, 65, 420, 520);
   @include responsive(margin-bottom, 68, 65, 420, 520);
 }
 .application-name {
-  @include responsive(margin-top, 68, 65, 420, 520);
+    font-family: 'Gilroy', sans-serif;
   @include responsive(width, 300, 480, 420, 520);
   @include responsive(padding-bottom, 28, 30, 420, 520);
   @include responsive(font-size, 20, 25, 420, 520);
@@ -52,6 +53,7 @@ button {
   color: #b7b8bc;
 }
 .application-tel {
+    font-family: 'Gilroy', sans-serif;
   @include responsive(margin-top, 45, 50, 420, 520);
   @include responsive(width, 300, 480, 420, 520);
   @include responsive(padding-bottom, 28, 30, 420, 520);
@@ -114,19 +116,19 @@ button {
   .application-text {
     @include responsive(font-size, 35, 40, 520, 740);
   }
-  .application-form {
-    @include responsive(margin-bottom, 65, 67, 520, 740);
-  }
   .application-name,
   .application-tel {
     @include responsive(width, 480, 620, 520, 740);
-    @include responsive(margin-top, 50, 50, 520, 740);
     @include responsive(padding-bottom, 30, 30, 520, 740);
     @include responsive(font-size, 25, 25, 520, 740);
     line-height: 1.2;
   }
-  .application-name {
+  .application-tel{
+    @include responsive(margin-top, 50, 50, 520, 740);
+  }
+  .application-form {
     @include responsive(margin-top, 65, 66, 520, 740);
+    @include responsive(margin-bottom, 65, 67, 520, 740);
   }
   .application-submit {
     @include responsive(margin-top, 50, 50, 520, 740);
@@ -157,16 +159,18 @@ button {
     @include responsive(font-size, 40, 50, 740, 1000);
   }
   .application-form {
-    @include responsive(margin-top, 0, 100, 740, 1000);
+    @include responsive(margin-top,66, 85 , 740, 1000);
     @include responsive(margin-bottom, 67, 85, 740, 1000);
   }
   .application-name,
   .application-tel {
     line-height: 1.2;
     @include responsive(width, 620, 811, 740, 1000);
-    @include responsive(margin-top, 50, 50, 740, 1000);
     @include responsive(padding-bottom, 30, 30, 740, 1000);
     @include responsive(font-size, 25, 25, 740, 1000);
+  }
+  .application-tel{
+    @include responsive(margin-top, 50, 50, 740, 1000);
   }
   .application-submit {
     @include responsive(margin-top, 50, 50, 740, 1000);
@@ -227,7 +231,6 @@ button {
     @include responsive(font-size, 16, 18, 1000, 1440);
     height: 58px;
     text-align: center;
-    font-family: 'Gilroy', sans-serif;
     font-weight: 800;
     line-height: 1.3;
   }
