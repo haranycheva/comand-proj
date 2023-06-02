@@ -186,10 +186,10 @@ button {
 }
 @media (min-width: 1000px) {
   .application {
-    @include responsive(padding-left, 33, 73, 1000, 1440);
-    @include responsive(padding-top, 70, 139, 1000, 1440);
-    @include responsive(padding-right, 33, 73, 1000, 1440);
-    @include responsive(padding-bottom, 70, 139, 1000, 1440);
+    @include responsive(padding-left, 33, 139, 1000, 1440);
+    @include responsive(padding-top, 70, 73, 1000, 1440);
+    @include responsive(padding-right, 33, 139, 1000, 1440);
+    @include responsive(padding-bottom, 70, 73, 1000, 1440);
     text-align: start;
   }
   .application-container {
@@ -250,10 +250,7 @@ button {
 }
 @media (min-width: 1440px) {
   .application {
-    @include responsive(padding-left, 73, 137, 1440, 1600);
-    @include responsive(padding-top, 139, 73, 1440, 1600);
-    @include responsive(padding-right, 73, 137, 1440, 1600);
-    @include responsive(padding-bottom, 139, 73, 1440, 1600);
+    padding: 73px,139px;
   }
   .application-container {
     max-width: 1159px;
