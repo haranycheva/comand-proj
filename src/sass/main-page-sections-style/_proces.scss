@@ -1,0 +1,213 @@
+
+
+.container{
+  @include responsive (max-width, 420, 520, 420, 520);
+  @include responsive (padding-left, 60, 34, 420, 520);
+  @include responsive (padding-right, 20, 38, 420, 520);
+  margin: 0 auto;
+  
+}
+
+.proces-section {
+  @include responsive (padding-top, 80, 100, 420, 520);
+  @include responsive (padding-bottom, 60, 50, 420, 520);
+    // padding: 80px 0 60px 0;
+    color: #131926;
+  }
+  .proces-section-ul {
+    //@include responsive (margin-top, 40, 40, 420, 520);
+    margin-top: 40px
+  }
+  
+  .proces-section-h {
+    @include responsive (width, 420, 431, 420, 520);
+    
+    text-align: center;
+    font-size: 60px;
+    //@include responsive (font-size, 60, 60, 420, 520);
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0 auto;
+  }
+  .proces-section-ul-item {
+    @include responsive (font-size, 20, 23, 420, 520);
+    
+    font-weight: 300;
+    line-height: 1.1;
+  }
+  .proces-section-ul-item:not(:last-child) {
+    @include responsive (margin-bottom, 30, 40, 420, 520);
+  }
+  .proces-section-ul-item:nth-child(1) {
+    @include responsive (width, 283, 422, 420, 520);
+    //width: 283px;
+    //@include responsive (padding-right, 64, 74, 420, 520);
+  }
+  .proces-section-ul-item:nth-child(2) {
+    @include responsive (width, 310, 450, 420, 520);
+    //width: 310px;
+    //@include responsive (margin-right, 36, 50, 420, 520);
+  }
+  .proces-section-ul-item:nth-child(3) {
+    @include responsive (width, 340, 448, 420, 520);
+    //width: 340px;
+    //@include responsive (margin-right, 20, 38, 420, 520);
+  }
+  
+  @media screen and (min-width: 520px) {
+    .container{
+      @include responsive (max-width, 520, 740, 520, 740);
+      @include responsive (padding-left, 34, 59, 520, 740);
+      @include responsive (padding-right, 38, 60, 520, 740);
+    }
+    
+    .proces-section {
+      @include responsive (padding-top, 100,  130, 520, 740);
+      @include responsive (padding-bottom, 50, 60,  520, 740);
+      // padding: 100px 0 50px 0;
+    }
+  
+    .proces-section-h {
+      text-align: center;
+      @include responsive (width, 431, 431, 520, 740);
+      font-size: 60px;
+      //@include responsive (font-size, 60, 60, 520, 740);
+      line-height: 1.2;
+      margin: 0 auto;
+      
+    }
+    .proces-section-ul-item {
+      font-weight: 1.1;
+      //@include responsive (font-size, 23, 23, 520, 740);
+      font-size: 23px;
+    }
+    .proces-section-ul-item:not(:last-child) {
+      margin-bottom: 40px;
+      //@include responsive (margin-bottom, 40, 40, 520, 740);
+    }
+    .proces-section-ul-item:nth-child(1) {
+      @include responsive (width, 422, 597,  520, 740);
+      //width: 422px;
+      //@include responsive (margin-right, 64, 84, 520, 740);
+    }
+    .proces-section-ul-item:nth-child(2) {
+      @include responsive (width, 450, 621,  520, 740);
+      //width: 450px;
+      //@include responsive (margin-right, 36, 60, 520, 740);
+    }
+    .proces-section-ul-item:nth-child(3) {
+      @include responsive (width, 448, 619,  520, 740);
+      //width: 448px;
+      //@include responsive (margin-right, 38, 62, 520, 740);
+    }
+  }
+
+  //
+
+
+
+  @media screen and (min-width: 740px) {
+    .container{
+      @include responsive (max-width, 740, 1000, 740, 1000);
+      @include responsive (padding-left, 59, 29, 740, 1000);
+      @include responsive (padding-right, 60, 24, 740, 1000);
+    }
+    .proces-section {
+      @include responsive (padding-top, 130, 150, 740, 1000);
+      @include responsive (padding-bottom, 50, 100, 740, 1000);
+      // padding: 130px 0 60px 0;
+    }
+    .proces-section-ul {
+      @include responsive (margin-top, 40, 80, 740, 1000);
+    }
+  
+    .proces-section-h {
+      @include responsive (font-size, 80, 100, 740, 1000);
+      @include  responsive (width, 431, 947, 740, 1000);
+      text-align: center;
+    }
+    .proces-section-ul-item {
+      @include responsive (font-size, 23, 25, 740, 1000);
+    }
+    .proces-section-ul-item:not(:last-child) {
+      margin-bottom: 40px;
+      //@include responsive (margin-bottom, 40, 40, 740, 1000);
+    }
+    .proces-section-ul-item:nth-child(1) {
+      @include responsive (width, 597, 884,  740, 1000);
+      //width:597px ;
+      //@include responsive (margin-right, 84, 87, 740, 1000);
+    }
+    .proces-section-ul-item:nth-child(2) {
+      @include responsive (width, 621, 884,  740, 1000);
+      //width: 621px;
+      //@include responsive (margin-right, 60, 87, 740, 1000);
+    }
+    .proces-section-ul-item:nth-child(3) {
+      @include responsive (width, 619, 861,  740, 1000);
+      //width: 619px;
+      //@include responsive (margin-right, 62, 110, 740, 1000);
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    .container{
+      @include responsive (max-width, 1000, 1440, 1000, 1440);
+      @include responsive (padding-left, 29, 139, 1000, 1440);
+      @include responsive (padding-right, 24, 140, 1000, 1440);
+    }
+    .proces-section {
+      padding: 150px 0 100px 0;
+    }
+    .proces-section-ul{
+      margin-top: 80;
+  
+      // padding: 80px 0 0 29px;
+    }
+  
+    .proces-section-h {
+      width: 947px;
+      font-size: 100px;
+    }
+    .proces-section-ul-item {
+      font-size: 25px;
+    }
+    .proces-section-ul-item:nth-child(1) {
+      @include responsive (width, 884, 1161, 1000, 1440);
+      //width: 884px;
+      //@include responsive (margin-right, 87, 140, 1000, 1440);
+    }
+    .proces-section-ul-item:nth-child(2) {
+      @include responsive (width, 884, 1061,  1000, 1440);
+      //width: 884px;
+      //@include responsive (margin-right, 87, 240, 1000, 1440);
+    }
+    .proces-section-ul-item:nth-child(3) {
+      @include responsive (width, 861, 1149,  1000, 1440);
+      //width: 861px;
+      //@include responsive (margin-right, 110, 151, 1000, 1440);
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    .container{
+      max-width: 1440px;
+      padding-left: 139px;
+      padding-right: 140px;
+    }
+    .proces-section-ul {
+      margin-top: 80px;
+    }
+
+    .proces-section-ul-item:nth-child(1){
+      width: 1161px;
+      //margin-right: 140px;
+    }
+    .proces-section-ul-item:nth-child(2) {
+      width: 1061px;
+      //margin-right: 240px;
+    }
+    .proces-section-ul-item:nth-child(3) {
+      width: 1149px;
+      //margin-right: 151px;
+    }
+  
+}
