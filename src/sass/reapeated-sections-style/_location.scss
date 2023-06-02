@@ -1,0 +1,73 @@
+.location {
+    text-align: center;
+    @include responsive(padding-top, 80, 100, 420, 520);
+    @include responsive(padding-bottom, 80, 60, 420, 520);
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .i4ewOd-pzNkMb-tJHJj{
+    display: none;
+  }
+  .location-title {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 417px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 1.2;
+    color: #131926;
+  }
+  
+  .map {
+    margin: 0 auto;
+    @include responsive(width, 417, 520, 420, 520);
+    height: 648px;
+  }
+  @media (min-width: 520px) {
+    .location {
+      @include responsive(padding-top, 100, 130, 520, 740);
+      @include responsive(padding-bottom, 60, 100, 520, 740);
+    }
+  
+    .location-title {
+      width: 417px;
+      @include responsive(font-size, 60, 80, 520, 740);
+    }
+  
+    .map {
+      @include responsive(width, 520, 740, 520, 740);
+    }
+  }
+  @media (min-width: 740px) {
+    .location {
+      @include responsive(padding-top, 130, 150, 740, 1000);
+      @include responsive(padding-bottom, 100, 100, 740, 1000);
+    }
+  
+    .location-title {
+      @include responsive(width, 417, 851, 740, 1000);
+      @include responsive(font-size, 80, 100, 740, 1000);
+    }
+  
+    .map {
+      @include responsive(width, 740, 1000, 740, 1000);
+    }
+  }
+  @media (min-width: 1000px) {
+    .location {
+      @include responsive(padding-top, 150, 150, 1000, 1440);
+      @include responsive(padding-bottom, 100, 100, 1000, 1440);
+    }
+  
+    .location-title {
+      @include responsive(width, 851, 851, 1000, 1440);
+      @include responsive(font-size, 100, 100, 1000, 1440);
+    }
+  
+    .map {
+      @include responsive(width, 1000, 1440, 1000, 1440);
+    }
+  }
+  
