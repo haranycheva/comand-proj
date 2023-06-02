@@ -110,7 +110,7 @@
     .container{
       @include responsive (max-width, 740, 1000, 740, 1000);
       @include responsive (padding-left, 59, 29, 740, 1000);
-      @include responsive (padding-right, 60, 87, 740, 1000);
+      @include responsive (padding-right, 60, 24, 740, 1000);
     }
     .proces-section {
       @include responsive (padding-top, 130, 150, 740, 1000);
@@ -153,7 +153,7 @@
     .container{
       @include responsive (max-width, 1000, 1440, 1000, 1440);
       @include responsive (padding-left, 29, 139, 1000, 1440);
-      @include responsive (padding-right, 87, 140, 1000, 1440);
+      @include responsive (padding-right, 24, 140, 1000, 1440);
     }
     .proces-section {
       padding: 150px 0 100px 0;
