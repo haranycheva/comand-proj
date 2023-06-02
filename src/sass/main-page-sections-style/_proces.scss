@@ -36,15 +36,18 @@
     @include responsive (margin-bottom, 30, 40, 420, 520);
   }
   .proces-section-ul-item:nth-child(1) {
-    width: 283px;
-    //@include responsive (margin-right, 64, 74, 420, 520);
+    @include responsive (width, 283, 422, 420, 520);
+    //width: 283px;
+    //@include responsive (padding-right, 64, 74, 420, 520);
   }
   .proces-section-ul-item:nth-child(2) {
-    width: 310px;
+    @include responsive (width, 310, 450, 420, 520);
+    //width: 310px;
     //@include responsive (margin-right, 36, 50, 420, 520);
   }
   .proces-section-ul-item:nth-child(3) {
-    width: 340px;
+    @include responsive (width, 340, 448, 420, 520);
+    //width: 340px;
     //@include responsive (margin-right, 20, 38, 420, 520);
   }
   
@@ -65,6 +68,7 @@
   
     .proces-section-h {
       text-align: center;
+      @include responsive (width, 431, 431, 520, 740);
       @include responsive (font-size, 60, 60, 520, 740);
       line-height: 1.2;
       margin: 0 auto;
@@ -72,21 +76,25 @@
     }
     .proces-section-ul-item {
       font-weight: 1.1;
-      @include responsive (font-size, 20, 23, 520, 740);
+      //@include responsive (font-size, 23, 23, 520, 740);
+      font-size: 23px;
     }
     .proces-section-ul-item:not(:last-child) {
       @include responsive (margin-bottom, 40, 40, 520, 740);
     }
     .proces-section-ul-item:nth-child(1) {
-      width: 422px;
+      @include responsive (width, 422, 597,  520, 740);
+      //width: 422px;
       //@include responsive (margin-right, 64, 84, 520, 740);
     }
     .proces-section-ul-item:nth-child(2) {
-      width: 450px;
+      @include responsive (width, 450, 621,  520, 740);
+      //width: 450px;
       //@include responsive (margin-right, 36, 60, 520, 740);
     }
     .proces-section-ul-item:nth-child(3) {
-      width: 448px;
+      @include responsive (width, 448, 619,  520, 740);
+      //width: 448px;
       //@include responsive (margin-right, 38, 62, 520, 740);
     }
   }
@@ -122,18 +130,28 @@
       @include responsive (margin-bottom, 40, 40, 740, 1000);
     }
     .proces-section-ul-item:nth-child(1) {
-      width:597px ;
+      @include responsive (width, 597, 884,  740, 1000);
+      //width:597px ;
       //@include responsive (margin-right, 84, 87, 740, 1000);
     }
     .proces-section-ul-item:nth-child(2) {
-      width: 621px;
+      @include responsive (width, 621, 884,  740, 1000);
+      //width: 621px;
       //@include responsive (margin-right, 60, 87, 740, 1000);
     }
     .proces-section-ul-item:nth-child(3) {
-      width: 619px;
+      @include responsive (width, 619, 861,  740, 1000);
+      //width: 619px;
       //@include responsive (margin-right, 62, 110, 740, 1000);
     }
   }
+
+  /////////////
+
+
+
+
+
   @media screen and (min-width: 1000px) {
     .container{
       @include responsive (max-width, 1000, 1440, 1000, 1440);
@@ -143,7 +161,7 @@
     }
     .proces-section-div {
       margin-top: 80;
-      @include responsive (padding-left, 139, 29, 1000, 1440);
+      @include responsive (padding-left, 29, 139, 1000, 1440);
   
       // padding: 80px 0 0 29px;
     }
@@ -151,21 +169,23 @@
     .proces-section-h {
       width: 947px;
       font-size: 100px;
-      text-align: center;
     }
     .proces-section-ul-item {
       font-size: 25px;
     }
     .proces-section-ul-item:nth-child(1) {
-      width: 884px;
+      @include responsive (width, 884, 1161, 1000, 1440);
+      //width: 884px;
       //@include responsive (margin-right, 87, 140, 1000, 1440);
     }
     .proces-section-ul-item:nth-child(2) {
-      width: 884px;
+      @include responsive (width, 884, 1061,  1000, 1440);
+      //width: 884px;
       //@include responsive (margin-right, 87, 240, 1000, 1440);
     }
     .proces-section-ul-item:nth-child(3) {
-      width: 861px;
+      @include responsive (width, 861, 1149,  1000, 1440);
+      //width: 861px;
       //@include responsive (margin-right, 110, 151, 1000, 1440);
     }
   }
