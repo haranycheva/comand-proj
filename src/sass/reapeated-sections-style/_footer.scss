@@ -353,6 +353,9 @@
   .scroll {
     @include responsive(right, 63, 33, 740, 1000);
   }
+  .social-search{
+    margin-top:0 ;
+  }
 }
 @media screen and (min-width: 1000px) {
   .footer-container {
