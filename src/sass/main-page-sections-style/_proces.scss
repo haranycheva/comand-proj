@@ -2,7 +2,10 @@
 
 .container{
   @include responsive (max-width, 420, 520, 420, 520);
+  @include responsive (padding-left, 60, 34, 420, 520);
+  @include responsive (padding-right, 20, 38, 420, 520);
   margin: 0 auto;
+  
 }
 
 .proces-section {
@@ -11,17 +14,17 @@
     // padding: 80px 0 60px 0;
     color: #131926;
   }
-  .proces-section-div {
-    @include responsive (margin-top, 40, 40, 420, 520);
-    @include responsive (padding-left, 60, 34, 420, 520);
-    //padding: 40px 0px 0 60px;
+  .proces-section-ul {
+    //@include responsive (margin-top, 40, 40, 420, 520);
+    margin-top: 40px
   }
   
   .proces-section-h {
     @include responsive (width, 420, 431, 420, 520);
     
     text-align: center;
-    @include responsive (font-size, 60, 60, 420, 520);
+    font-size: 60px;
+    //@include responsive (font-size, 60, 60, 420, 520);
     font-weight: 800;
     line-height: 1.2;
     margin: 0 auto;
@@ -54,6 +57,8 @@
   @media screen and (min-width: 520px) {
     .container{
       @include responsive (max-width, 520, 740, 520, 740);
+      @include responsive (padding-left, 34, 59, 520, 740);
+      @include responsive (padding-right, 38, 60, 520, 740);
     }
     
     .proces-section {
@@ -61,15 +66,12 @@
       @include responsive (padding-bottom, 50, 60,  520, 740);
       // padding: 100px 0 50px 0;
     }
-    .proces-section-div {
-      @include responsive (padding-left, 34, 59, 520, 740);
-      // padding: 40px 0 0 34px;
-    }
   
     .proces-section-h {
       text-align: center;
       @include responsive (width, 431, 431, 520, 740);
-      @include responsive (font-size, 60, 60, 520, 740);
+      font-size: 60px;
+      //@include responsive (font-size, 60, 60, 520, 740);
       line-height: 1.2;
       margin: 0 auto;
       
@@ -80,7 +82,8 @@
       font-size: 23px;
     }
     .proces-section-ul-item:not(:last-child) {
-      @include responsive (margin-bottom, 40, 40, 520, 740);
+      margin-bottom: 40px;
+      //@include responsive (margin-bottom, 40, 40, 520, 740);
     }
     .proces-section-ul-item:nth-child(1) {
       @include responsive (width, 422, 597,  520, 740);
@@ -106,16 +109,16 @@
   @media screen and (min-width: 740px) {
     .container{
       @include responsive (max-width, 740, 1000, 740, 1000);
+      @include responsive (padding-left, 59, 29, 740, 1000);
+      @include responsive (padding-right, 60, 87, 740, 1000);
     }
     .proces-section {
       @include responsive (padding-top, 130, 150, 740, 1000);
       @include responsive (padding-bottom, 50, 100, 740, 1000);
       // padding: 130px 0 60px 0;
     }
-    .proces-section-div {
+    .proces-section-ul {
       @include responsive (margin-top, 40, 80, 740, 1000);
-      @include responsive (padding-left, 59, 29, 740, 1000);
-      // padding: 40px 0 0 59px;
     }
   
     .proces-section-h {
@@ -127,7 +130,8 @@
       @include responsive (font-size, 23, 25, 740, 1000);
     }
     .proces-section-ul-item:not(:last-child) {
-      @include responsive (margin-bottom, 40, 40, 740, 1000);
+      margin-bottom: 40px;
+      //@include responsive (margin-bottom, 40, 40, 740, 1000);
     }
     .proces-section-ul-item:nth-child(1) {
       @include responsive (width, 597, 884,  740, 1000);
@@ -145,23 +149,17 @@
       //@include responsive (margin-right, 62, 110, 740, 1000);
     }
   }
-
-  /////////////
-
-
-
-
-
   @media screen and (min-width: 1000px) {
     .container{
       @include responsive (max-width, 1000, 1440, 1000, 1440);
+      @include responsive (padding-left, 29, 139, 1000, 1440);
+      @include responsive (padding-right, 87, 140, 1000, 1440);
     }
     .proces-section {
       padding: 150px 0 100px 0;
     }
-    .proces-section-div {
+    .proces-section-ul{
       margin-top: 80;
-      @include responsive (padding-left, 29, 139, 1000, 1440);
   
       // padding: 80px 0 0 29px;
     }
@@ -192,13 +190,11 @@
   @media screen and (min-width: 1440px) {
     .container{
       max-width: 1440px;
-    }
-    .proces-section-div {
-      margin-top: 80px;
       padding-left: 139px;
+      padding-right: 140px;
     }
-  
-    .proces-section-h {
+    .proces-section-ul {
+      margin-top: 80px;
     }
 
     .proces-section-ul-item:nth-child(1){
