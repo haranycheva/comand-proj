@@ -44,11 +44,13 @@
 .footer-number:hover {
   color: #c12023;
 }
+.loc{
+  @include responsive(margin-top, 91, 86, 420, 520);
+}
 .footer-location {
   color: #fafafa;
   font-weight: 800;
   @include responsive(font-size, 20, 30, 420, 520);
-  @include responsive(margin-top, 91, 86, 420, 520);
 }
 .numbers {
   @include responsive(margin-top, 30, 35, 420, 520);
@@ -88,13 +90,16 @@
   background-color: #fafafa;
   @include responsive(top, 37, 65, 420, 520);
 }
+.social-search{
+@include responsive(margin-top, 60, 83, 420, 520);
+}
 .footer-search-form {
   position: relative;
   display: flex;
   text-align: center;
   @include responsive(height, 38, 66, 420, 520);
 
-  @include responsive(margin-top, 60, 83, 420, 520);
+  
   @include responsive(width, 227, 430, 420, 520);
 }
 .footer-search-svg {
@@ -191,9 +196,12 @@
   .footer-nav-menu-item + .footer-nav-menu-item {
     @include responsive(margin-top, 35, 30, 520, 740);
   }
+  .loc{
+    @include responsive(margin-top, 86, 0, 520, 740);
+  }
   .footer-location {
     @include responsive(font-size, 30, 20, 520, 740);
-    @include responsive(margin-top, 86, 0, 520, 740);
+    
   }
   .numbers {
     @include responsive(margin-top, 35, 30, 520, 740);
@@ -213,9 +221,11 @@
   .footer-search-form::before {
     @include responsive(top, 65, 37, 520, 740);
   }
+  .social-search{
+    @include responsive(margin-top, 83, 0, 520, 740);
+  }
   .footer-search-form {
     @include responsive(height, 66, 38, 520, 740);
-    @include responsive(margin-top, 83, 0, 520, 740);
     @include responsive(width, 430, 227, 520, 740);
   }
   .footer-search-svg {
@@ -281,6 +291,9 @@
   }
   .footer-nav-menu-item + .footer-nav-menu-item {
     margin-top: 30px;
+  }
+  .loc{
+    margin-top: 0;
   }
   .footer-location {
     font-size: 20px;
