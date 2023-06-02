@@ -5,7 +5,7 @@
   font-weight: 800;
   text-align: center;
   font-size: 60px;
-  line-height: 0.7;
+  line-height: 1.2;
 }
 .options {
   @include responsive(margin-top, 45, 40, 420, 520);
@@ -23,12 +23,12 @@
 }
 .salon-title {
   font-weight: 800;
-  line-height: 0.7;
+  line-height: 1.2;
   @include responsive(font-size, 40, 50, 420, 520);
 }
 .salon-text {
   font-weight: 300;
-  line-height: 1;
+  line-height: 1.2;
   @include responsive(margin-top, 25, 35, 420, 520);
   @include responsive(font-size, 20, 25, 420, 520);
 }
@@ -163,7 +163,7 @@
     padding-top: 146px;
     @include responsive(padding-right, 75, 193, 1000, 1440);
     @include responsive(padding-left, 39, 140, 1000, 1440);
-    padding-bottom: 146px;
+    padding-bottom: 100px;
     text-align: left;
   }
   .body-kit-disc {
@@ -171,7 +171,7 @@
     padding-top: 146px;
     @include responsive(padding-right, 75, 193, 1000, 1440);
     @include responsive(padding-left, 39, 140, 1000, 1440);
-    padding-bottom: 146px;
+    padding-bottom: 100px;
     text-align: left;
   }
   .brakes-disc {
@@ -179,7 +179,7 @@
     padding-top: 146px;
     @include responsive(padding-right, 72, 219, 1000, 1440);
     @include responsive(padding-left, 42, 140, 1000, 1440);
-    padding-bottom: 146px;
+    padding-bottom: 100px;
     text-align: left;
   }
 }
@@ -192,7 +192,7 @@
     padding-top: 146px;
     padding-right: 193px;
     padding-left: 140px;
-    padding-bottom: 146px;
+    padding-bottom: 100px;
     text-align: left;
   }
   .body-kit-disc {
@@ -200,7 +200,7 @@
     padding-top: 146px;
     padding-right: 193px;
     padding-left: 140px;
-    padding-bottom: 146px;
+    padding-bottom: 100px;
     text-align: left;
   }
   .brakes-disc {
@@ -208,7 +208,7 @@
     padding-top: 146px;
     padding-right: 219px;
     padding-left: 140px;
-    padding-bottom: 146px;
+    padding-bottom: 100px;
     text-align: left;
   }
 }
