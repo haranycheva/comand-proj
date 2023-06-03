@@ -1,15 +1,14 @@
 .about-company {
   display: flex;
   flex-direction: column;
-  @mixin responsive(row-gap, 40, 60, 420, 520);
-  row-gap: 40px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  @include responsive(row-gap, 40, 60, 420, 520);
+  @include responsive(margin-top, 40, 50, 420, 520);
+  @include responsive(margin-bottom, 60, 60, 420, 520);
 }
 .about-company-title {
   text-align: center;
   font-weight: 800;
-  font-size: 53px;
+  @include responsive(font-size, 53, 75, 420, 520);
   line-height: 1.2;
   color: #131926;
 }
@@ -18,27 +17,52 @@
 }
 .about-company-information {
   box-sizing: border-box;
-  padding-left: 60px;
+  @include responsive(padding-left, 60, 35, 420, 520);
+  @include responsive(row-gap, 30, 40, 420, 520);
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
 }
-.about-company-text{
+.about-company-text {
   font-weight: 300;
-  font-size: 20px;
+  @include responsive(font-size, 20, 23, 420, 520);
   line-height: 1.2;
   color: #131926;
-  &:nth-child(1){
-    margin-top: 40px;
-    max-width: 286px;
+  &:nth-child(1) {
+    @include responsive(max-width, 286, 422, 420, 520);
   }
-  &:nth-child(2){
-    max-width: 310px;
+  &:nth-child(2) {
+    @include responsive(max-width, 310, 450, 420, 520);
   }
-  &:nth-child(3){
-    max-width: 340px;
+  &:nth-child(3) {
+    @include responsive(max-width, 340, 448, 420, 520);
   }
 }
 .about-company-pictures-second > img {
   width: 100%;
+}
+@media (min-width: 520px) {
+  .about-company {
+    @include responsive(row-gap, 60, 60, 420, 520);
+    @include responsive(margin-top, 50, 60, 420, 520);
+    @include responsive(margin-bottom, 60, 60, 420, 520);
+  }
+  .about-company-title {
+    @include responsive(font-size, 75, 100, 420, 520);
+  }
+  .about-company-information {
+    @include responsive(padding-left, 35, 59, 420, 520);
+    @include responsive(row-gap, 40, 40, 420, 520);
+  }
+  .about-company-text {
+    @include responsive(font-size, 23, 23, 420, 520);
+    &:nth-child(1) {
+      @include responsive(max-width, 422, 597, 420, 520);
+    }
+    &:nth-child(2) {
+      @include responsive(max-width, 450, 621, 420, 520);
+    }
+    &:nth-child(3) {
+      @include responsive(max-width, 448, 619, 420, 520);
+    }
+  }
 }
