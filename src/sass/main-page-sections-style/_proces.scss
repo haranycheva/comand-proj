@@ -20,7 +20,7 @@
   }
   
   .proces-section-h {
-    @include responsive (width, 420, 431, 420, 520);
+    @include responsive (width, 340, 431, 420, 520);
     
     text-align: center;
     font-size: 60px;
