@@ -17,6 +17,9 @@
 .footer-link:hover{
   color: #c12023;
 }
+.consf-user-info-item:hover{
+    text-decoration: underline;
+}
 .footer-info {
   display: flex;
   align-items: center;
@@ -320,7 +323,7 @@
   .footer-search-form {
     height: 38px;
     margin-top: 0;
-    @include responsive(width, 227, 257, 740, 1000);
+    width: 227px;
   }
   .footer-search-svg {
     width: 24px;
