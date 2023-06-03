@@ -1,0 +1,263 @@
+.read-more{
+    background-color: #FAFAFA;
+}
+
+.read-more-container{
+    @include responsive(max-width, 420, 520, 420, 520);
+    @include responsive(padding-right, 45, 29, 420, 520);
+    @include responsive(padding-left, 46, 34, 420, 520);
+    @include responsive(padding-top, 80, 100, 420, 520);
+    @include responsive(padding-bottom, 80, 110, 420, 520);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #131926;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.read-more-title{
+    font-size: 60px;
+    @include responsive(width, 329, 417, 420, 520);
+    @include responsive(margin-bottom, 40, 50, 420, 520);
+    text-align: center;
+}
+
+.read-more-cards-list{
+    @include responsive(gap, 30, 40, 420, 520);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.read-more-infinity-card, .read-more-bmv-card, .read-more-salon-card, .read-more-tlc200-card{
+    display: none;
+}
+
+.read-more-cards-list-item{
+    background-color:  #FFFFFF;
+    box-shadow: 0px 0px 20px #EEEEEE;
+    border-radius: 20px;
+    @include responsive (width, 293, 457, 420, 520);
+    @include responsive (height, 348, 537, 420, 520);
+}
+
+.read-more-cards-list-item-img{
+    width: 100%;
+}
+
+.read-more-cards-list-item-text-container{
+    @include responsive(padding-left, 21, 33, 420, 520);
+    @include responsive(padding-top, 28, 51, 420, 520);
+}
+
+.read-more-cards-list-item-date{
+    @include responsive(font-size, 10, 14, 420, 520);
+    color: #B7B8BC;
+}
+
+.read-more-cards-list-item-text{
+    @include responsive(margin-top, 17, 25, 420, 520);
+    @include responsive(font-size, 14, 20, 420, 520);
+    color: #B7B8BC;
+}
+
+.read-more-cards-list-item-title {
+    @include responsive(margin-top, 17, 26, 420, 520);
+    @include responsive(font-size, 20, 30, 420, 520);
+    @include responsive (width, 219, 281, 420, 520);
+    color: #131926;
+}
+
+@media screen and (min-width: 520px){
+    .read-more-container{
+        @include responsive(max-width, 520, 740, 520, 740);
+        @include responsive(padding-right, 29, 63, 520, 740);
+        @include responsive(padding-left, 34, 58, 520, 740);
+        @include responsive(padding-top, 100, 130, 520, 740);
+        @include responsive(padding-bottom, 110, 100, 520, 740);
+    }
+
+    .read-more-title{
+        @include responsive(font-size, 60, 80, 520, 740);
+        @include responsive(width, 417, 557, 520, 740);
+        @include responsive(margin-bottom, 50, 60, 520, 740);
+    }
+
+    .read-more-cards-list{
+        gap: 40px;
+    }
+
+    .read-more-cards-list-item{
+        @include responsive (width, 457, 500, 520, 740);
+        @include responsive (height, 547, 600, 520, 740);
+    }
+
+    .read-more-cards-list-item-date{
+        @include responsive(font-size, 14, 16, 520, 740);
+    }
+
+    .read-more-cards-list-item-text{
+        @include responsive(margin-top, 25, 30, 520, 740);
+        @include responsive(font-size, 20, 22, 520, 740);
+    }
+
+    .read-more-cards-list-item-title {
+        @include responsive(font-size, 30, 33, 520, 740);
+        @include responsive(margin-top, 26, 31, 520, 740);
+        @include responsive (width, 281, 290, 520, 740);
+    }
+
+    .read-more-cards-list-item-text-container{
+        @include responsive(padding-left, 33, 27, 520, 740);
+        padding-top: 51px;
+    }
+}
+
+@media screen and (min-width: 740px){
+    .read-more-container{
+        @include responsive(max-width, 740, 1000, 740, 1000);
+        @include responsive(padding-right, 63, 30, 740, 1000);
+        @include responsive(padding-left, 58, 33, 740, 1000);
+        @include responsive(padding-top, 130, 150, 740, 1000);
+        @include responsive(padding-bottom, 100, 136, 740, 1000);
+    }
+
+    .read-more-cards-list{
+        flex-direction: row;
+        @include responsive(gap, 33, 23, 740, 1000);
+    }
+
+    .read-more-cards-list-item{
+        @include responsive(width, 293, 457, 740, 1000);
+        @include responsive(height, 353, 547, 740, 1000);
+    }
+
+    .read-more-cards-list-item-date{
+        @include responsive(font-size, 10, 14, 740, 1000 );
+    }
+
+    .read-more-cards-list-item-text{
+        @include responsive(margin-top, 17, 25, 740, 1000);
+        @include responsive(font-size, 14, 20, 740, 1000 );
+    }
+
+    .read-more-cards-list-item-title {
+        @include responsive(font-size, 20, 30, 740, 1000 );
+        @include responsive(margin-top, 17, 26, 740, 1000 );
+        @include responsive(width, 219, 281, 740, 1000)
+    }
+
+    .read-more-cards-list-item-text-container{
+        padding-left: 27px;
+        @include responsive(padding-top, 28, 51, 740, 1000);
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .read-more-container{
+        @include responsive(max-width, 1000, 1440, 1000, 1440);
+        @include responsive(padding-right, 30, 133, 1000, 1440);
+        @include responsive(padding-left, 33, 147, 1000, 1440);
+        padding-top: 150px;
+        @include responsive(padding-bottom, 136, 100, 1000, 1440);
+    }
+
+    .read-more-mclaren-card, .read-more-porsche-card{
+        display: none;
+    }
+
+    .read-more-infinity-card, .read-more-bmv-card{
+        display: block;
+    }
+
+    .read-more-title{
+        @include responsive(font-size, 90, 100, 1000, 1440);
+        @include responsive(width, 940, 1045, 1000, 1440);
+        @include responsive(margin-bottom, 50, 60, 1000, 1440);
+    }
+
+    .read-more-cards-list{
+        @include responsive(gap, 23, 40, 1000, 1440);
+    }
+
+    .read-more-cards-list-item{
+        @include responsive (width, 457, 540, 1000, 1440);
+        @include responsive(height, 547, 640, 1000, 1440);
+    }
+
+    .read-more-cards-list-item-date{
+        @include responsive(font-size, 20, 22, 1000, 1440);
+    }
+
+    .read-more-cards-list-item-text{
+        @include responsive(margin-top, 25, 30, 1000, 1440);
+        @include responsive(font-size, 20, 22, 1000, 1440);
+    }
+
+    .read-more-cards-list-item-title {
+        @include responsive(font-size, 30, 33, 1000, 1440);
+        @include responsive(margin-top, 26, 31, 1000, 1440);
+        width: 281px;
+    }
+
+    .read-more-cards-list-item-text-container{
+        padding-left: 33px;
+        padding-top: 51px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .read-more-container{
+        margin: 0 auto;
+        max-width: 1440px;
+        padding: 150px 133px 100px 147px;
+    }
+
+    .read-more-infinity-card {
+        display: none;
+    }
+
+    .read-more-salon-card, .read-more-tlc200-card {
+        display: block;
+    }
+
+    .read-more-title{
+        font-size: 100px;
+        width: 1045px;
+        margin-bottom: 60px;
+    }
+
+    .read-more-cards-list{
+        gap: 40px;
+    }
+
+    .read-more-cards-list-item{
+        width: 360px;
+        height: 440px;
+    }
+
+    .read-more-cards-list-item-date{
+        font-size: 10px;
+    }
+
+    .read-more-cards-list-item-text{
+        margin-top: 22px;
+        font-size: 18px;
+    }
+
+    .read-more-cards-list-item-title {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .read-more-tlc200-card span {
+        display: block;
+    }
+
+    .read-more-cards-list-item-text-container{
+        padding-left: 26px;
+        padding-top: 31px;
+    }
+}
