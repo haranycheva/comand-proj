@@ -1,0 +1,75 @@
+.contacts {
+    font-weight: 800;
+    text-align: center;
+    color: #fafafa;
+    line-height: 1.2;
+  }
+  .contacts-h {
+    @include responsive (font-size, 53, 75, 420, 520);
+    @include responsive (margin-top, 60, 52, 420, 520);
+    @include responsive (margin-right, 59, 85, 420, 520);
+    @include responsive (margin-bottom, 40, 60, 420, 520);
+    @include responsive (margin-left, 60, 86, 420, 520);
+    color: #131926;
+  }
+
+  .contacts-div {
+    background-color: #131926;
+  }
+  .contacts-div-container{
+    @include responsive (padding-top, 40, 73, 420, 520);
+    @include responsive (padding-right, 46, 10, 420, 520);
+    @include responsive (padding-bottom, 40, 73, 420, 520);
+    @include responsive (padding-left, 47, 10, 420, 520);
+  }
+  .contacts-div-h {
+    font-weight: 800;
+    @include responsive (font-size, 25, 37, 420, 520);
+    @include responsive (margin-bottom, 46, 55, 420, 520);
+    line-height: 1.2;
+  }
+  .contacts-div-h-span {
+    color: #df2528;
+  }
+  .contacts-div-adress,
+  .contacts-div-tel,
+  .contacts-div-email {
+    @include responsive (font-size, 20, 30, 420, 520);
+    margin-bottom: 35px;
+  }
+  .contacts-div-tel {
+  }
+  .contacts-div-email {
+  }
+  .contacts-div-write_btn {
+    padding-top: 22px;
+    @include responsive (padding-right, 56, 134, 420, 520);
+    padding-bottom: 23px;
+    @include responsive (padding-left, 54, 135, 420, 520);
+    @include responsive (margin-top, 3, 20, 420, 520);
+    font-size: 18px;
+    background-color: #df2528;
+    color: #fafafa;
+    border: transparent;
+    border-radius: 29px;
+    font-weight: 800;
+
+  }
+  .contacts-div-social_media {
+    font-size: 23px;
+
+  }
+  .social_medias-ul {
+  }
+  .social_medias-ul-item {
+  }
+  .social_medias-ul-item-Inst {
+  }
+  .social_medias-ul-item-Wk {
+  }
+  .social_medias-ul-item-YouTube {
+  }
+  .social_medias-ul-item-D2 {
+  }
+
+  
