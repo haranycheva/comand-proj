@@ -1,6 +1,4 @@
 
-<<<<<<< Updated upstream
-
 body{
     position: relative;
 }
@@ -10,40 +8,19 @@ body{
     top: 0;
     right: 0;
     
-=======
-.burger-menu-burger {  
->>>>>>> Stashed changes
     width: 414px;
     height: 748px;
     background-color:#131926 ;
     color: #FAFAFA;
     font-weight: 800;
     line-height: 1.2;
-<<<<<<< Updated upstream
     
-=======
-    position: relative;
->>>>>>> Stashed changes
 }
 .burger-menu-container {
     width: 414px;
     height: 748px;
     padding: 34px 35px 76px 51px;
 
-<<<<<<< Updated upstream
-=======
-}
-.burger-menu-burger-search{
-    position: relative;
-    display: flex;
-}
-.burger-menu-search_svg{
-    position: absolute;
-    top: 5px;
-    left: 0;
-    width: 24px;
-    height: 24px;
->>>>>>> Stashed changes
 }
 .burger-menu-burger-search{
     position: relative;
@@ -82,39 +59,23 @@ input[type="text"]::placeholder{
 .burger-menu-cros_svg {
     width: 18px;
     height: 18px;
-
-    background-color: transparent
 }
 .burger-menu-ul {
-<<<<<<< Updated upstream
     margin: 127px 0 200px 0;
-=======
-    margin: 127px 0 239px 0;
->>>>>>> Stashed changes
 }
 .burger-menu-ul-item {
     font-weight: 800px;
     font-size: 30px;
 }
 .burger-menu-ul-item:not(:last-child){
-<<<<<<< Updated upstream
     margin-bottom: 30px;
-=======
-    margin-bottom: 45px;
->>>>>>> Stashed changes
 }
 .burger-menu-JT_svg {
     position: absolute;
     top: 273px;
-<<<<<<< Updated upstream
     right: -26;
     width: 250px;
     height: 250px;
-=======
-    right: -74;
-    width: 267px;
-    height: 161px;
->>>>>>> Stashed changes
 }
 .burger-menu-social_medias-h {
     font-size: 25px;
@@ -154,3 +115,17 @@ input[type="text"]::placeholder{
     margin: 10px 11px;
 
 }
+
+.burger-menu-social_medias-item .burger-menu-social_medias-item-instSvg:ho
+.burger-menu-social_medias-item-instSvg:hover{
+    fill: ;
+} 
+.burger-menu-social_medias-item-wkSvg:hover{
+}
+.burger-menu-social_medias-item-youtubeSvg:hover{
+
+} 
+.burger-menu-social_medias-item-D2Svg:hover{
+
+}
+
