@@ -1,7 +1,11 @@
+header{
+  background-color: #FAFAFA;
+}
 .logo {
   @include responsive(width, 60, 62, 420, 520);
   @include responsive(height, 60, 62, 420, 520);
 }
+
 .nav {
   display: none;
 }
@@ -176,7 +180,6 @@
   }
   .order-btn {
     font-weight: 800;
-
     @include responsive(font-size, 18, 21, 1440, 1600);
     line-height: 0.8;
     @include responsive(padding-top, 22, 28, 1440, 1600);
