@@ -1,75 +1,156 @@
 .contacts {
-    font-weight: 800;
-    text-align: center;
-    color: #fafafa;
-    line-height: 1.2;
-  }
-  .contacts-h {
-    @include responsive (font-size, 53, 75, 420, 520);
-    @include responsive (margin-top, 60, 52, 420, 520);
-    @include responsive (margin-right, 59, 85, 420, 520);
-    @include responsive (margin-bottom, 40, 60, 420, 520);
-    @include responsive (margin-left, 60, 86, 420, 520);
-    color: #131926;
-  }
+  font-weight: 800;
+  text-align: center;
+  color: #fafafa;
+  line-height: 1.2;
+}
+.contacts-h {
+  @include responsive(font-size, 53, 75, 420, 520);
+  @include responsive(margin-top, 60, 52, 420, 520);
+  @include responsive(margin-right, 59, 85, 420, 520);
+  @include responsive(margin-bottom, 40, 60, 420, 520);
+  @include responsive(margin-left, 60, 86, 420, 520);
+  color: #131926;
+}
 
-  .contacts-div {
-    background-color: #131926;
+.contacts-div {
+  background-color: #131926;
+}
+.contacts-div-container {
+  @include responsive(padding-top, 40, 73, 420, 520);
+  @include responsive(padding-right, 46, 10, 420, 520);
+  @include responsive(padding-bottom, 40, 73, 420, 520);
+  @include responsive(padding-left, 47, 10, 420, 520);
+}
+.contacts-div-h {
+  font-weight: 800;
+  @include responsive(font-size, 25, 37, 420, 520);
+  @include responsive(margin-bottom, 46, 55, 420, 520);
+  line-height: 1.2;
+}
+.contacts-div-h-span {
+  color: #df2528;
+}
+.contacts-div-adress,
+.contacts-div-tel,
+.contacts-div-email {
+  @include responsive(font-size, 20, 30, 420, 520);
+  margin-bottom: 35px;
+}
+.contacts-div-tel {
+}
+.contacts-div-email {
+}
+.contacts-div-write_btn {
+    @include responsive(width, 300, 459, 420, 520);
+  padding-top: 22px;
+  @include responsive(padding-right, 56, 134, 420, 520);
+  padding-bottom: 23px;
+  @include responsive(padding-left, 54, 135, 420, 520);
+  @include responsive(margin-top, 3, 20, 420, 520);
+  font-size: 18px;
+  background-color: #df2528;
+  color: #fafafa;
+  border: transparent;
+  border-radius: 29px;
+  font-weight: 800;
+}
+.contacts-div-social_media {
+  @include responsive(margin-top, 37, 54, 420, 520);
+  @include responsive(font-size, 23, 30, 420, 520);
+}
+.social_medias-ul {
+    width: 242px;
+  display: flex;
+  gap: 30px;
+  margin: 0 auto;
+  @include responsive(margin-top, 27, 30, 420, 520);
+}
+
+.social_medias-ul-item {
+  width: 41px;
+  height: 41px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+}
+
+.social_medias-ul-item-Inst {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+.social_medias-ul-item-Wk {
+  width: 24px;
+  height: 16px;
+  margin: 12px 8px;
+}
+.social_medias-ul-item-YouTube {
+  width: 22px;
+  height: 17px;
+  margin: 12px 9px 11px 9px;
+}
+.social_medias-ul-item-D2 {
+  width: 18px;
+  height: 17px;
+  margin: 11px 12px;
+}
+
+.social_medias-ul-item:nth-child(1):hover {
+  background-color: #a06c6d;
+}
+.social_medias-ul-item:nth-child(2):hover {
+  background-color: #0079fa;
+}
+.social_medias-ul-item:nth-child(3):hover {
+  background-color: #df2528;
+}
+.social_medias-ul-item:last-child:hover {
+  background-color: #df2528;
+}
+
+// .:hover,
+// .:hover,
+// .:hover,
+// .:hover
+// {
+//     fill: #FAFAFA;
+// }
+
+@media screen and (min-width: 420px) {
+  .contacts-h {
+    @include responsive(font-size, 75, 100, 520, 740);
+    @include responsive(margin-top, 52, 106, 520, 740);
+    @include responsive(margin-right, 85, 142, 520, 740);
+    margin-bottom: 60px;
+    @include responsive(margin-left, 86, 142, 520, 740);
   }
-  .contacts-div-container{
-    @include responsive (padding-top, 40, 73, 420, 520);
-    @include responsive (padding-right, 46, 10, 420, 520);
-    @include responsive (padding-bottom, 40, 73, 420, 520);
-    @include responsive (padding-left, 47, 10, 420, 520);
+  .contacts-div-container {
+    padding-top: 73;
+    @include responsive(padding-right, 10, 60, 520, 740);
+    padding-bottom: 73;
+    @include responsive(padding-left, 10, 67, 520, 740);
   }
   .contacts-div-h {
-    font-weight: 800;
-    @include responsive (font-size, 25, 37, 420, 520);
-    @include responsive (margin-bottom, 46, 55, 420, 520);
-    line-height: 1.2;
-  }
-  .contacts-div-h-span {
-    color: #df2528;
+    @include responsive(font-size, 37, 50, 520, 740);
+    @include responsive(margin-bottom, 55, 74, 520, 740);
   }
   .contacts-div-adress,
   .contacts-div-tel,
   .contacts-div-email {
-    @include responsive (font-size, 20, 30, 420, 520);
-    margin-bottom: 35px;
-  }
-  .contacts-div-tel {
-  }
-  .contacts-div-email {
+    font-size: 30;
   }
   .contacts-div-write_btn {
-    padding-top: 22px;
-    @include responsive (padding-right, 56, 134, 420, 520);
-    padding-bottom: 23px;
-    @include responsive (padding-left, 54, 135, 420, 520);
-    @include responsive (margin-top, 3, 20, 420, 520);
-    font-size: 18px;
-    background-color: #df2528;
-    color: #fafafa;
-    border: transparent;
-    border-radius: 29px;
-    font-weight: 800;
 
+    @include responsive(padding-right, 134, 35, 520, 740);
+
+    @include responsive(padding-left, 135, 35, 520, 740);
+    @include responsive(margin-top, 20, 7, 520, 740);
   }
   .contacts-div-social_media {
-    font-size: 23px;
-
+    @include responsive(margin-top, 54, 43, 520, 740);
+    font-size: 30px;
   }
   .social_medias-ul {
+    margin-top: 30;
   }
-  .social_medias-ul-item {
-  }
-  .social_medias-ul-item-Inst {
-  }
-  .social_medias-ul-item-Wk {
-  }
-  .social_medias-ul-item-YouTube {
-  }
-  .social_medias-ul-item-D2 {
-  }
-
-  
+}
