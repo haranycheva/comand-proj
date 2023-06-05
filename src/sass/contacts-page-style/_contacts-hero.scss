@@ -14,6 +14,7 @@
 }
 
 .contacts-div {
+  overflow: hidden;
   background-color: #131926;
 }
 .contacts-div-container {
@@ -201,7 +202,7 @@
     display: block;
     position: absolute;
     width: 600px;
-    height: 450px;
+    @include responsive(height, 450, 500, 740, 1000);
     bottom:-50;
     right: -130;
   }
@@ -226,8 +227,8 @@
     @include responsive(padding-left, 37, 140, 1000, 1440);
   }
   .contacts-backJT_svg{
-    width: 600px;
-    height: 500px;
+    @include responsive(width, 600, 800, 1000, 1440);
+    @include responsive(height, 500, 750, 1000, 1440);
     bottom:-60;
     right: -100;
   }
