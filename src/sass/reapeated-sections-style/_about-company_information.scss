@@ -5,24 +5,24 @@
   @include responsive(margin-top, 40, 50, 420, 520);
   @include responsive(margin-bottom, 60, 60, 420, 520);
 }
-.about-company-title {
+.about-company_title {
   text-align: center;
   font-weight: 800;
   @include responsive(font-size, 53, 75, 420, 520);
   line-height: 0.8;
   color: #131926;
 }
-.about-company-pictures-first > img {
+.about-company_pictures-first > img {
   width: 100%;
 }
-.about-company-information {
+.about-company_information {
   box-sizing: border-box;
   @include responsive(padding-left, 60, 35, 420, 520);
   @include responsive(row-gap, 30, 40, 420, 520);
   display: flex;
   flex-direction: column;
 }
-.about-company-text {
+.about-company_text {
   font-weight: 300;
   @include responsive(font-size, 20, 23, 420, 520);
   line-height: 1.2;
@@ -37,7 +37,7 @@
     @include responsive(max-width, 340, 448, 420, 520);
   }
 }
-.about-company-pictures-second > img {
+.about-company_pictures-second > img {
   width: 100%;
 }
 @media (min-width: 520px) {
@@ -46,14 +46,14 @@
     @include responsive(margin-top, 50, 60, 520, 740);
     @include responsive(margin-bottom, 60, 60, 520, 740);
   }
-  .about-company-title {
+  .about-company_title {
     @include responsive(font-size, 75, 100, 520, 740);
   }
-  .about-company-information {
+  .about-company_information {
     @include responsive(padding-left, 35, 59, 520, 740);
     @include responsive(row-gap, 40, 40, 520, 740);
   }
-  .about-company-text {
+  .about-company_text {
     @include responsive(font-size, 23, 23, 520, 740);
     &:nth-child(1) {
       @include responsive(max-width, 422, 597, 520, 740);
@@ -72,14 +72,14 @@
     @include responsive(margin-top, 60, 80, 740, 1000);
     @include responsive(margin-bottom, 60, 100, 740, 1000);
   }
-  .about-company-title {
+  .about-company_title {
     @include responsive(font-size, 100, 150, 740, 1000);
   }
-  .about-company-information {
+  .about-company_information {
     @include responsive(padding-left, 59, 29, 740, 1000);
     @include responsive(row-gap, 40, 40, 740, 1000);
   }
-  .about-company-text {
+  .about-company_text {
     @include responsive(font-size, 23, 25, 740, 1000);
     &:nth-child(1) {
       @include responsive(max-width, 597, 884, 740, 1000);
@@ -98,14 +98,14 @@
     @include responsive(margin-top, 80, 100, 1000, 1440);
     @include responsive(margin-bottom, 100, 100, 1000, 1440);
   }
-  .about-company-title {
+  .about-company_title {
     @include responsive(font-size, 150, 185, 1000, 1440);
   }
-  .about-company-information {
+  .about-company_information {
     @include responsive(padding-left, 29, 141, 1000, 1440);
     @include responsive(row-gap, 40, 40, 1000, 1440);
   }
-  .about-company-text {
+  .about-company_text {
     @include responsive(font-size, 25, 25, 1000, 1440);
     &:nth-child(1) {
       @include responsive(max-width, 884, 1161, 1000, 1440);
@@ -124,14 +124,14 @@
     margin-top: 100px;
     margin-bottom: 100px;
   }
-  .about-company-title {
+  .about-company_title {
     font-size: 185px;
   }
-  .about-company-information {
+  .about-company_information {
     padding-left: 141px;
     row-gap: 40px;
   }
-  .about-company-text {
+  .about-company_text {
     font-size: 25px;
     &:nth-child(1) {
       @include responsive(max-width, 884, 1161, 1440, 1600);
