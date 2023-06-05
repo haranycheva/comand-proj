@@ -132,11 +132,16 @@ input[type="text"]::placeholder{
     background-color: #DF2528;
 }
 
-.burger-menu-social_medias-item-instSvg:hover,
-.burger-menu-social_medias-item-wkSvg:hover,
-.burger-menu-social_medias-item-youtubeSvg:hover,
-.burger-menu-social_medias-item-D2Svg:hover
-{
+.burger-menu-social_medias-item:nth-child(1):hover .burger-menu-social_medias-item-instSvg{
+    fill: #FAFAFA;
+}
+.burger-menu-social_medias-item:nth-child(2):hover .burger-menu-social_medias-item-wkSvg{
+    fill: #FAFAFA;
+}
+.burger-menu-social_medias-item:nth-child(3):hover .burger-menu-social_medias-item-youtubeSvg{
+    fill: #FAFAFA;
+}
+.burger-menu-social_medias-item:last-child:hover .burger-menu-social_medias-item-D2Svg{
     fill: #FAFAFA;
 } 
 
