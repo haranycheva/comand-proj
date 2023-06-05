@@ -4,65 +4,67 @@
   @include responsive(row-gap, 40, 60, 420, 520);
   @include responsive(margin-top, 40, 50, 420, 520);
   @include responsive(margin-bottom, 60, 60, 420, 520);
-}
-.about-company_title {
-  text-align: center;
-  font-weight: 800;
-  @include responsive(font-size, 53, 75, 420, 520);
-  line-height: 0.8;
-  color: #131926;
-}
-.about-company_pictures-first > img {
-  width: 100%;
-}
-.about-company_information {
-  box-sizing: border-box;
-  @include responsive(padding-left, 60, 35, 420, 520);
-  @include responsive(row-gap, 30, 40, 420, 520);
-  display: flex;
-  flex-direction: column;
-}
-.about-company_text {
-  font-weight: 300;
-  @include responsive(font-size, 20, 23, 420, 520);
-  line-height: 1.2;
-  color: #131926;
-  &:nth-child(1) {
-    @include responsive(max-width, 286, 422, 420, 520);
+  // * subclass
+  &_title {
+    text-align: center;
+    font-weight: 800;
+    @include responsive(font-size, 53, 75, 420, 520);
+    line-height: 0.8;
+    color: #131926;
   }
-  &:nth-child(2) {
-    @include responsive(max-width, 310, 450, 420, 520);
+  &_pictures-first > img {
+    width: 100%;
   }
-  &:nth-child(3) {
-    @include responsive(max-width, 340, 448, 420, 520);
+  &_information {
+    box-sizing: border-box;
+    @include responsive(padding-left, 60, 35, 420, 520);
+    @include responsive(row-gap, 30, 40, 420, 520);
+    display: flex;
+    flex-direction: column;
   }
-}
-.about-company_pictures-second > img {
-  width: 100%;
+  &_text {
+    font-weight: 300;
+    @include responsive(font-size, 20, 23, 420, 520);
+    line-height: 1.2;
+    color: #131926;
+    &:nth-child(1) {
+      @include responsive(max-width, 286, 422, 420, 520);
+    }
+    &:nth-child(2) {
+      @include responsive(max-width, 310, 450, 420, 520);
+    }
+    &:nth-child(3) {
+      @include responsive(max-width, 340, 448, 420, 520);
+    }
+  }
+  &_pictures-second > img {
+    width: 100%;
+  }
 }
 @media (min-width: 520px) {
   .about-company {
     @include responsive(row-gap, 60, 60, 520, 740);
     @include responsive(margin-top, 50, 60, 520, 740);
     @include responsive(margin-bottom, 60, 60, 520, 740);
-  }
-  .about-company_title {
-    @include responsive(font-size, 75, 100, 520, 740);
-  }
-  .about-company_information {
-    @include responsive(padding-left, 35, 59, 520, 740);
-    @include responsive(row-gap, 40, 40, 520, 740);
-  }
-  .about-company_text {
-    @include responsive(font-size, 23, 23, 520, 740);
-    &:nth-child(1) {
-      @include responsive(max-width, 422, 597, 520, 740);
+    // * subclass
+    &_title {
+      @include responsive(font-size, 75, 100, 520, 740);
     }
-    &:nth-child(2) {
-      @include responsive(max-width, 450, 621, 520, 740);
+    &_information {
+      @include responsive(padding-left, 35, 59, 520, 740);
+      @include responsive(row-gap, 40, 40, 520, 740);
     }
-    &:nth-child(3) {
-      @include responsive(max-width, 448, 619, 520, 740);
+    &_text {
+      @include responsive(font-size, 23, 23, 520, 740);
+      &:nth-child(1) {
+        @include responsive(max-width, 422, 597, 520, 740);
+      }
+      &:nth-child(2) {
+        @include responsive(max-width, 450, 621, 520, 740);
+      }
+      &:nth-child(3) {
+        @include responsive(max-width, 448, 619, 520, 740);
+      }
     }
   }
 }
@@ -71,15 +73,42 @@
     @include responsive(row-gap, 60, 80, 740, 1000);
     @include responsive(margin-top, 60, 80, 740, 1000);
     @include responsive(margin-bottom, 60, 100, 740, 1000);
+    // * subclass
+    &_title {
+      @include responsive(font-size, 100, 150, 740, 1000);
+    }
+    &_information {
+      @include responsive(padding-left, 59, 29, 740, 1000);
+      @include responsive(row-gap, 40, 40, 740, 1000);
+    }
+    &_text {
+      @include responsive(font-size, 23, 25, 740, 1000);
+      &:nth-child(1) {
+        @include responsive(max-width, 597, 884, 740, 1000);
+      }
+      &:nth-child(2) {
+        @include responsive(max-width, 621, 884, 740, 1000);
+      }
+      &:nth-child(3) {
+        @include responsive(max-width, 619, 861, 740, 1000);
+      }
+    }
   }
-  .about-company_title {
+}
+@media (min-width: 1000px) {
+  .about-company {
+    @include responsive(row-gap, 80, 80, 1000, 1440);
+    @include responsive(margin-top, 80, 100, 1000, 1440);
+    @include responsive(margin-bottom, 100, 100, 1000, 1440);
+    // * subclass
+    &_title {
     @include responsive(font-size, 100, 150, 740, 1000);
   }
-  .about-company_information {
+  &_information {
     @include responsive(padding-left, 59, 29, 740, 1000);
     @include responsive(row-gap, 40, 40, 740, 1000);
   }
-  .about-company_text {
+  &_text {
     @include responsive(font-size, 23, 25, 740, 1000);
     &:nth-child(1) {
       @include responsive(max-width, 597, 884, 740, 1000);
@@ -91,31 +120,6 @@
       @include responsive(max-width, 619, 861, 740, 1000);
     }
   }
-}
-@media (min-width: 1000px) {
-  .about-company {
-    @include responsive(row-gap, 80, 80, 1000, 1440);
-    @include responsive(margin-top, 80, 100, 1000, 1440);
-    @include responsive(margin-bottom, 100, 100, 1000, 1440);
-  }
-  .about-company_title {
-    @include responsive(font-size, 150, 185, 1000, 1440);
-  }
-  .about-company_information {
-    @include responsive(padding-left, 29, 141, 1000, 1440);
-    @include responsive(row-gap, 40, 40, 1000, 1440);
-  }
-  .about-company_text {
-    @include responsive(font-size, 25, 25, 1000, 1440);
-    &:nth-child(1) {
-      @include responsive(max-width, 884, 1161, 1000, 1440);
-    }
-    &:nth-child(2) {
-      @include responsive(max-width, 884, 1061, 1000, 1440);
-    }
-    &:nth-child(3) {
-      @include responsive(max-width, 861, 1149, 1000, 1440);
-    }
   }
 }
 @media (min-width: 1440px) {
@@ -123,24 +127,25 @@
     row-gap: 80px;
     margin-top: 100px;
     margin-bottom: 100px;
-  }
-  .about-company_title {
-    font-size: 185px;
-  }
-  .about-company_information {
-    padding-left: 141px;
-    row-gap: 40px;
-  }
-  .about-company_text {
-    font-size: 25px;
-    &:nth-child(1) {
-      @include responsive(max-width, 884, 1161, 1440, 1600);
+    // * subclass
+    &_title {
+      font-size: 185px;
     }
-    &:nth-child(2) {
-      @include responsive(max-width, 884, 1061, 1440, 1600);
+    &_information {
+      padding-left: 141px;
+      row-gap: 40px;
     }
-    &:nth-child(3) {
-      @include responsive(max-width, 861, 1149, 1440, 1600);
+    &_text {
+      font-size: 25px;
+      &:nth-child(1) {
+        @include responsive(max-width, 884, 1161, 1440, 1600);
+      }
+      &:nth-child(2) {
+        @include responsive(max-width, 884, 1061, 1440, 1600);
+      }
+      &:nth-child(3) {
+        @include responsive(max-width, 861, 1149, 1440, 1600);
+      }
     }
   }
 }
