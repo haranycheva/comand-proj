@@ -31,12 +31,18 @@
 }
 .contacts-div-h-span {
   color: #df2528;
+  display: block;
 }
 .contacts-div-adress,
 .contacts-div-tel,
 .contacts-div-email {
   @include responsive(font-size, 20, 30, 420, 520);
   margin-bottom: 35px;
+}
+.contacts-div-adress:hover,
+.contacts-div-tel:hover,
+.contacts-div-email:hover {
+  color: #df2528
 }
 .contacts-div-tel {
 }
@@ -71,7 +77,7 @@
   @include responsive(margin-top, 27, 30, 420, 520);
 }
 
-.social_medias-ul-item {
+.social_medias-ul-item_div {
   width: 38px;
   height: 38px;
   background-color: #d9d9d9;
@@ -99,25 +105,31 @@
   margin: 10px 11px;
 }
 
-.social_medias-ul-item:nth-child(1):hover {
+.social_medias-ul-item_div1:hover {
   background-color: #a06c6d;
 }
-.social_medias-ul-item:nth-child(1):hover .social_medias-ul-item-Inst{
+.social_medias-ul-item_div:nth-child(1):hover .social_medias-ul-item-Inst{
   fill: #FAFAFA;
 }
-.social_medias-ul-item:nth-child(2):hover {
-  background-color: #0079fa;
-  fill: #FAFAFA;
-}
-.social_medias-ul-item:nth-child(3):hover {
-  background-color: #df2528;
-  fill: #FAFAFA;
-}
-.social_medias-ul-item:last-child:hover {
-  background-color: #df2528;
 
+.social_medias-ul-item_div2:hover{
+  background-color: #0079fa;
 }
-.social_medias-ul-item:last-child:hover .social_medias-ul-item-D2{
+.social_medias-ul-item_div:nth-child(2):hover .social_medias-ul-item-Wk{
+  fill: #FAFAFA;
+}
+
+.social_medias-ul-item_div3:hover{
+  background-color: #df2528;
+}
+.social_medias-ul-item_div:nth-child(3):hover .social_medias-ul-item-YouTube{
+  fill: #FAFAFA;
+}
+
+.social_medias-ul-item_div4:hover {
+  background-color: #df2528;
+}
+.social_medias-ul-item_div:last-child:hover .social_medias-ul-item-D2{
   fill: #FAFAFA;
 }
 .contacts-backJT_svg{
