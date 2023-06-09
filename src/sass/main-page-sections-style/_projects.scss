@@ -1,0 +1,217 @@
+.projects {
+    background: #FAFAFA;
+}
+.options{
+    background: #F0F0F0;
+}
+.project-title {
+  font-weight: 800;
+  text-align: center;
+  font-size: 60px;
+  line-height: 1.2;
+}
+.options {
+  @include responsive(margin-top, 45, 40, 420, 520);
+}
+.salon-picture {
+  @include responsive(width, 420, 520, 420, 520);
+}
+.salon-disc {
+  text-align: center;
+  @include responsive(max-width, 420, 520, 420, 520);
+  @include responsive(padding-top, 129, 119, 420, 520);
+  @include responsive(padding-right, 61, 52, 420, 520);
+  @include responsive(padding-left, 61, 52, 420, 520);
+  @include responsive(padding-bottom, 129, 118, 420, 520);
+}
+.salon-title {
+  font-weight: 800;
+  line-height: 1.2;
+  @include responsive(font-size, 40, 50, 420, 520);
+}
+.salon-text {
+  font-weight: 300;
+  line-height: 1.2;
+  @include responsive(margin-top, 25, 35, 420, 520);
+  @include responsive(font-size, 20, 25, 420, 520);
+}
+.body-kit-disc {
+  text-align: center;
+  @include responsive(max-width, 420, 520, 420, 520);
+  @include responsive(padding-top, 129, 119, 420, 520);
+  @include responsive(padding-right, 79, 51, 420, 520);
+  @include responsive(padding-left, 64, 53, 420, 520);
+  @include responsive(padding-bottom, 129, 118, 420, 520);
+}
+.brakes-disc {
+  text-align: center;
+  @include responsive(max-width, 420, 520, 420, 520);
+  @include responsive(padding-top, 126, 115, 420, 520);
+  @include responsive(padding-right, 78, 52, 420, 520);
+  @include responsive(padding-left, 64, 52, 420, 520);
+  @include responsive(padding-bottom, 125, 115, 420, 520);
+}
+@media screen and (min-width: 520px) {
+  .project-title {
+    @include responsive(font-size, 60, 80, 520, 740);
+  }
+  .options {
+    margin-top: 40px;
+  }
+  .salon-picture {
+    @include responsive(width, 520, 740, 520, 740);
+  }
+
+  .salon-disc {
+    @include responsive(max-width, 520, 740, 520, 740);
+    @include responsive(padding-top, 119, 95, 520, 740);
+    @include responsive(padding-right, 52, 126, 520, 740);
+    @include responsive(padding-left, 52, 125, 520, 740);
+    @include responsive(padding-bottom, 118, 95, 520, 740);
+  }
+  .salon-title {
+    @include responsive(font-size, 50, 70, 520, 740);
+  }
+  .salon-text {
+    @include responsive(margin-top, 35, 40, 520, 740);
+    @include responsive(font-size, 25, 30, 520, 740);
+  }
+  .body-kit-disc {
+    @include responsive(max-width, 520, 740, 520, 740);
+    @include responsive(padding-top, 119, 95, 520, 740);
+    @include responsive(padding-right, 52, 126, 520, 740);
+    @include responsive(padding-left, 53, 125, 520, 740);
+    @include responsive(padding-bottom, 118, 95, 520, 740);
+  }
+  .brakes-disc {
+    @include responsive(max-width, 520, 740, 520, 740);
+    @include responsive(padding-top, 115, 95, 520, 740);
+    @include responsive(padding-right, 52, 126, 520, 740);
+    @include responsive(padding-left, 52, 125, 520, 740);
+    @include responsive(padding-bottom, 115, 95, 520, 740);
+  }
+}
+@media screen and (min-width: 740px) {
+  .project-title {
+    @include responsive(font-size, 80, 100, 740, 1000);
+  }
+  .options {
+    @include responsive(margin-top, 40, 80, 740, 1000);
+  }
+  .salon-picture {
+    width: 100%;
+  }
+  .salon-title {
+    font-size: 70px;
+  }
+  .salon-text {
+    @include responsive(margin-top, 40, 30, 740, 1000);
+    font-size: 30px;
+    width: 386px;
+    margin-left: auto ;
+    margin-right: auto;
+  }
+  .salon-disc {
+    @include responsive(max-width, 740, 1000, 740, 1000);
+    @include responsive(padding-top, 95, 146, 740, 1000);
+    @include responsive(padding-right, 126, 75, 740, 1000);
+    @include responsive(padding-left, 125, 39, 740, 1000);
+    @include responsive(padding-bottom, 95, 146, 740, 1000);
+  }
+  .body-kit-disc {
+    @include responsive(max-width, 740, 1000, 740, 1000);
+    @include responsive(padding-top, 95, 146, 740, 1000);
+    @include responsive(padding-right, 126, 72, 740, 1000);
+    @include responsive(padding-left, 125, 42, 740, 1000);
+    @include responsive(padding-bottom, 95, 146, 740, 1000);
+  }
+  .brakes-disc {
+    @include responsive(max-width, 740, 1000, 740, 1000);
+    @include responsive(padding-top, 95, 146, 740, 1000);
+    @include responsive(padding-right, 126, 75, 740, 1000);
+    @include responsive(padding-left, 125, 39, 740, 1000);
+    @include responsive(padding-bottom, 95, 146, 740, 1000);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .project-title {
+    font-size: 100px;
+  }
+  .options {
+    margin-top: 80px;
+  }
+  .salon-title {
+    font-size: 50px;
+  }
+  .salon-text {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .salon-tailoring {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .body-kit {
+    display: flex;
+  }
+  .brakes {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .salon-picture {
+    @include responsive(width, 500, 720, 1000, 1440);
+  }
+  .salon-disc {
+    @include responsive(max-width, 500, 720, 1000, 1440);
+    padding-top: 146px;
+    @include responsive(padding-right, 75, 193, 1000, 1440);
+    @include responsive(padding-left, 39, 140, 1000, 1440);
+    padding-bottom: 100px;
+    text-align: left;
+  }
+  .body-kit-disc {
+    @include responsive(max-width, 500, 720, 1000, 1440);
+    padding-top: 146px;
+    @include responsive(padding-right, 75, 193, 1000, 1440);
+    @include responsive(padding-left, 39, 140, 1000, 1440);
+    padding-bottom: 100px;
+    text-align: left;
+  }
+  .brakes-disc {
+    @include responsive(max-width, 500, 720, 1000, 1440);
+    padding-top: 146px;
+    @include responsive(padding-right, 72, 219, 1000, 1440);
+    @include responsive(padding-left, 42, 140, 1000, 1440);
+    padding-bottom: 100px;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .salon-picture {
+    @include responsive(width, 720, 800, 1440, 1600);
+  }
+  .salon-disc {
+    @include responsive(max-width, 720, 800, 1440, 1600);
+    padding-top: 146px;
+    padding-right: 193px;
+    padding-left: 140px;
+    padding-bottom: 100px;
+    text-align: left;
+  }
+  .body-kit-disc {
+    @include responsive(max-width, 720, 800, 1440, 1600);
+    padding-top: 146px;
+    padding-right: 193px;
+    padding-left: 140px;
+    padding-bottom: 100px;
+    text-align: left;
+  }
+  .brakes-disc {
+    @include responsive(max-width, 720, 800, 1440, 1600);
+    padding-top: 146px;
+    padding-right: 219px;
+    padding-left: 140px;
+    padding-bottom: 100px;
+    text-align: left;
+  }
+}
