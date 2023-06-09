@@ -2,7 +2,8 @@
 body{
     position: relative;
 }
-.burger-menu-burger {  
+
+.burger-menu-burger {
     overflow: hidden;
     position: absolute;
     top: 0;
@@ -67,10 +68,13 @@ input[type="text"]::placeholder{
     font-weight: 800px;
     font-size: 30px;
 }
+.burger-menu-ul-item a{
+    color: #FAFAFA;
+}
 .burger-menu-ul-item:not(:last-child){
     margin-bottom: 30px;
 }
-.burger-menu-ul-item:hover{
+.burger-menu-ul-item:hover a{
     color: #DF2528;
 }
 .burger-menu-JT_svg {
