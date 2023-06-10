@@ -7,7 +7,7 @@
 .addition-cards {
   display: none;
 }
-.filter-btn{
+.filter-btn {
   background: transparent;
   border: none;
   font-weight: 800;
@@ -109,7 +109,7 @@
   margin-right: auto;
 }
 .order-information {
-  @include responsive(margin-top, 28, 51, 420, 520);
+  @include responsive(padding-top, 28, 51, 420, 520);
   @include responsive(padding-right, 47, 143, 420, 520);
   @include responsive(padding-left, 27, 33, 420, 520);
   @include responsive(padding-bottom, 28, 50, 420, 520);
@@ -184,7 +184,7 @@
     @include responsive(top, 27, 28, 520, 740);
   }
   .order-information {
-    margin-top: 52px;
+    padding-top: 52px;
     @include responsive(padding-right, 143, 143, 520, 740);
     @include responsive(padding-left, 33, 50, 520, 740);
     @include responsive(padding-bottom, 50, 73, 520, 740);
@@ -240,10 +240,13 @@
     top: 28px;
   }
   .order-information {
-    @include responsive(margin-top, 28, 51, 740, 1000);
+    @include responsive(padding-top, 28, 51, 740, 1000);
     @include responsive(padding-right, 47, 143, 740, 1000);
     @include responsive(padding-left, 27, 33, 740, 1000);
     @include responsive(padding-bottom, 28, 50, 740, 1000);
+  }
+  .BMW-info {
+    @include responsive(padding-bottom, 48, 80, 740, 1000);
   }
   .date {
     @include responsive(font-size, 10, 14, 740, 1000);
@@ -288,7 +291,7 @@
   }
   .cars-cads-list {
     margin-top: 80px;
-    @include responsive(width, 937, 1160, 1000, 1440);
+    @include responsive(width, 937, 761, 1000, 1440);
     @include responsive(row-gap, 35, 60, 1000, 1440);
     @include responsive(column-gap, 23, 40, 1000, 1440);
   }
@@ -296,10 +299,13 @@
     @include responsive(width, 457, 360, 1000, 1440);
   }
   .order-information {
-    @include responsive(margin-top, 51, 31, 1000, 1440);
+    @include responsive(padding-top, 51, 31, 1000, 1440);
     @include responsive(padding-right, 143, 115, 1000, 1440);
     @include responsive(padding-left, 33, 26, 1000, 1440);
     @include responsive(padding-bottom, 50, 41, 1000, 1440);
+  }
+  .BMW-info {
+    @include responsive(padding-bottom, 85, 70, 1000, 1440);
   }
   .date {
     @include responsive(font-size, 14, 10, 1000, 1440);
@@ -345,10 +351,20 @@
     width: 360px;
   }
   .order-information {
-    margin-top: 31px;
+    padding-top: 31px;
     padding-right: 115px;
     padding-left: 26px;
     padding-bottom: 41px;
+  }
+  .tlc-information {
+    padding-right: 36px;
+  }
+  .q50-information {
+    padding-right:58px ;
+    padding-bottom: 70px;
+  }
+  .BMW-info{
+    padding-bottom: 70px;
   }
   .date {
     font-size: 14px;
@@ -356,7 +372,7 @@
   .proces-name {
     margin-top: 22px;
     font-size: 18px;
-}
+  }
   .car-name {
     margin-top: 20px;
     font-size: 25px;
