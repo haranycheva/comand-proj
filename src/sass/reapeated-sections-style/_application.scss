@@ -212,10 +212,10 @@ button {
     justify-content: center;
   }
   .application-name {
-    @include responsive(margin-right, 66, 58, 740, 1000);
+    @include responsive(margin-right, 66, 40, 1000, 1440);
   }
   .application-tel {
-    @include responsive(margin-right, 0, 66, 740, 1000);
+    @include responsive(margin-right, 58, 40, 1000, 1440);
   }
   .application-name,
   .application-tel {
@@ -268,10 +268,10 @@ button {
     justify-content: flex-start;
   }
   .application-name {
-    margin-right: 58px;
+    margin-right: 40px;
   }
   .application-tel {
-    margin-right: 66px;
+    margin-right: 40px;
   }
   .application-name,
   .application-tel {
