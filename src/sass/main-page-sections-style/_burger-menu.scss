@@ -1,7 +1,7 @@
 body{
     position: relative;
 }
-.burger-menu-burger {  
+.burger-menu--modal{  
     overflow: hidden;
     position: absolute;
     top: 0;
@@ -15,18 +15,18 @@ body{
     line-height: 1.2;
     
 }
-.burger-menu-container {
+.burger-menu__container {
     width: 414px;
     height: 748px;
     padding: 34px 35px 76px 51px;
 
 }
-.burger-menu-burger-search{
+.burger-menu--modal__search{
     position: relative;
     display: flex;
     align-items: center;
 }
-.burger-menu-search_svg{
+.burger-menu__search-svg{
     position: absolute;
     left: 0;
     bottom: 17px;
@@ -36,7 +36,7 @@ body{
 input[type="text"]::placeholder{
     color: #FAFAFA;
 }
-.burger-menu-serch {
+.burger-menu__serch-input {
     padding-left: 34px;
     padding-bottom: 17px;
     font-size: 18px;
@@ -55,62 +55,89 @@ input[type="text"]::placeholder{
     background-color: transparent;
     border: transparent;
 }
-.burger-menu-cros_svg {
+.burger-menu__cros-svg {
     width: 18px;
     height: 18px;
 }
-.burger-menu-ul {
+.burger-menu__list {
     margin: 127px 0 200px 0;
 }
-.burger-menu-ul-item {
+.burger-menu__item {
     font-weight: 800px;
     font-size: 30px;
 }
-.burger-menu-ul-item:not(:last-child){
+.burger-menu__item:hover{
+    color: #DF2528;
+}
+.burger-menu__item:not(:last-child){
     margin-bottom: 30px;
 }
-.burger-menu-JT_svg {
+.burger-menu__JT-svg {
     position: absolute;
     top: 273px;
     right: -26;
     width: 250px;
     height: 250px;
 }
-.burger-menu-social_medias-h {
+.burger-menu__social-medias-title {
     font-size: 25px;
 }
-.burger-menu-social_medias-ul {
+.burger-menu__social-medias-list {
     display: flex;
     gap: 27px;
     margin-top: 29px;
 }
-.burger-menu-social_medias-item {
+.burger-menu__social-medias-item {
     width: 38px;
     height:38px;
     background-color: #D9D9D9;
     border-radius: 50%;
 }
 
-.burger-menu-social_medias-item-instSvg{
+.burger-menu__social-medias-instSvg{
     width: 20px;
     height: 20px;
     margin: 9px;
 } 
-.burger-menu-social_medias-item-wkSvg {
+.burger-menu__social-medias-wkSvg {
     width: 24px;
     height: 16px;
     margin: 11px 7px;
 
 }
-.burger-menu-social_medias-item-youtubeSvg{
+.burger-menu__social-medias-youtubeSvg{
     width: 22px;
     height: 17px;
     margin: 11px 8px 10px 8px;
 
 } 
-.burger-menu-social_medias-item-D2Svg{
+.burger-menu__social-medias-D2Svg{
     width: 18px;
     height: 17px;
     margin: 10px 11px;
 
+}
+.burger-menu__social-medias-item:nth-child(1):hover {
+    background-color:#A06C6D ;
+}
+.burger-menu__social-medias-item:nth-child(1):hover .burger-menu__social-medias-instSvg{
+    fill: #FAFAFA;
+}
+.burger-menu__social-medias-item:nth-child(2):hover {
+    background-color:#0079FA;
+}
+.burger-menu__social-medias-item:nth-child(2):hover .burger-menu__social-medias-wkSvg{
+    fill: #FAFAFA;
+}
+.burger-menu__social-medias-item:nth-child(3):hover {
+    background-color:#DF2528;
+}
+.burger-menu__social-medias-item:nth-child(3):hover .burger-menu__social-medias-youtubeSvg{
+    fill: #FAFAFA;
+}
+.burger-menu__social-medias-item:nth-child(4):hover {
+    background-color:#DF2528;
+}
+.burger-menu__social-medias-item:last-child:hover .burger-menu__social-medias-D2Svg{
+    fill: #FAFAFA;
 }
