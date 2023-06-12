@@ -39,15 +39,17 @@
   @include responsive(font-size, 20, 30, 420, 520);
   margin-bottom: 35px;
 }
-.contacts-div-adress:hover,
-.contacts-div-tel:hover,
-.contacts-div-email:hover {
+.tel1, .tel2, .adress, .email{
+  color: #FAFAFA;
+  }
+  
+.email:hover,
+.adress:hover,
+.tel1:hover, 
+.tel2:hover {
   color: #df2528
 }
-.contacts-div-tel {
-}
-.contacts-div-email {
-}
+
 .contacts-div-write_btn {
   @include responsive(width, 300, 459, 420, 520);
   padding-top: 22px;
