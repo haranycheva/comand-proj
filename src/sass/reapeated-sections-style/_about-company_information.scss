@@ -14,6 +14,7 @@
   }
 
   &_subtitle {
+    display: none;
     display: flex;
     @include responsive(margin-left, 60, 30, 420, 520);
     column-gap: 10px;
