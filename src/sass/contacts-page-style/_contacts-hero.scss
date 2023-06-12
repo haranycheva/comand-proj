@@ -1,0 +1,269 @@
+.contacts {
+  font-weight: 800;
+  text-align: center;
+  color: #fafafa;
+  line-height: 1.2;
+}
+.contacts-h {
+  @include responsive(font-size, 53, 75, 420, 520);
+  @include responsive(margin-top, 60, 52, 420, 520);
+  @include responsive(margin-right, 59, 85, 420, 520);
+  @include responsive(margin-bottom, 40, 60, 420, 520);
+  @include responsive(margin-left, 60, 86, 420, 520);
+  color: #131926;
+}
+
+.contacts-div {
+  overflow: hidden;
+  background-color: #131926;
+}
+.contacts-div-container {
+  @include responsive(padding-top, 40, 73, 420, 520);
+  @include responsive(padding-right, 46, 10, 420, 520);
+  @include responsive(padding-bottom, 40, 73, 420, 520);
+  @include responsive(padding-left, 47, 10, 420, 520);
+}
+.contacts-div-h {
+  font-weight: 800;
+  @include responsive(font-size, 25, 37, 420, 520);
+  @include responsive(margin-bottom, 46, 55, 420, 520);
+  line-height: 1.2;
+}
+.contacts-div-h-span {
+  color: #df2528;
+  display: block;
+}
+.contacts-div-adress,
+.contacts-div-tel,
+.contacts-div-email {
+  @include responsive(font-size, 20, 30, 420, 520);
+  margin-bottom: 35px;
+}
+.tel1,
+.tel2,
+.adress,
+.email {
+  color: #fafafa;
+}
+
+.email:hover,
+.adress:hover,
+.tel1:hover,
+.tel2:hover {
+  color: #df2528;
+}
+
+.contacts-div-write_btn {
+  @include responsive(width, 300, 459, 420, 520);
+  padding-top: 22px;
+  @include responsive(padding-right, 56, 134, 420, 520);
+  padding-bottom: 23px;
+  @include responsive(padding-left, 54, 135, 420, 520);
+  @include responsive(margin-top, 3, 20, 420, 520);
+  font-size: 18px;
+  background-color: #c12023;
+  color: #fafafa;
+  border: transparent;
+  border-radius: 29px;
+  font-weight: 800;
+}
+.contacts-div-write_btn:hover {
+  background-color: #df2528;
+}
+.contacts-div-social_media {
+  @include responsive(margin-top, 37, 54, 420, 520);
+  @include responsive(font-size, 23, 30, 420, 520);
+}
+.social_medias-ul {
+  width: 242px;
+  display: flex;
+  gap: 30px;
+  margin: 0 auto;
+  @include responsive(margin-top, 27, 30, 420, 520);
+}
+
+.social_medias-ul-item_div {
+  width: 38px;
+  height: 38px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+}
+
+.social_medias-ul-item-Inst {
+  width: 20px;
+  height: 20px;
+  margin: 9px;
+}
+.social_medias-ul-item-Wk {
+  width: 24px;
+  height: 16px;
+  margin: 11px 7px;
+}
+.social_medias-ul-item-YouTube {
+  width: 22px;
+  height: 17px;
+  margin: 11px 8px 10px 8px;
+}
+.social_medias-ul-item-D2 {
+  width: 18px;
+  height: 17px;
+  margin: 10px 11px;
+}
+
+.social_medias-ul-item_div1:hover {
+  background-color: #a06c6d;
+}
+.social_medias-ul-item_div1:hover .social_medias-ul-item-Inst {
+  fill: #fafafa;
+}
+
+.social_medias-ul-item_div2:hover {
+  background-color: #0079fa;
+}
+.social_medias-ul-item_div2:hover .social_medias-ul-item-Wk {
+  fill: #fafafa;
+}
+
+.social_medias-ul-item_div3:hover {
+  background-color: #df2528;
+}
+.social_medias-ul-item_div3:hover .social_medias-ul-item-YouTube {
+  fill: #fafafa;
+}
+
+.social_medias-ul-item_div4:hover {
+  background-color: #df2528;
+}
+.social_medias-ul-item_div4:hover .social_medias-ul-item-D2 {
+  fill: #fafafa;
+}
+.contacts-backJT_svg {
+  display: none;
+}
+
+@media screen and (min-width: 520px) {
+  .contacts-h {
+    @include responsive(font-size, 75, 100, 520, 740);
+    @include responsive(margin-top, 52, 106, 520, 740);
+    @include responsive(margin-right, 85, 142, 520, 740);
+    margin-bottom: 60px;
+    @include responsive(margin-left, 86, 142, 520, 740);
+  }
+  .contacts-div-container {
+    padding-top: 73;
+    @include responsive(padding-right, 10, 60, 520, 740);
+    padding-bottom: 73;
+    @include responsive(padding-left, 10, 67, 520, 740);
+  }
+  .contacts-div-h {
+    @include responsive(font-size, 37, 50, 520, 740);
+    @include responsive(margin-bottom, 55, 74, 520, 740);
+  }
+  .contacts-div-adress,
+  .contacts-div-tel,
+  .contacts-div-email {
+    font-size: 30;
+  }
+  .contacts-div-write_btn {
+    @include responsive(width, 459, 260, 520, 740);
+    @include responsive(padding-right, 134, 35, 520, 740);
+
+    @include responsive(padding-left, 135, 35, 520, 740);
+    @include responsive(margin-top, 20, 7, 520, 740);
+  }
+  .contacts-div-social_media {
+    @include responsive(margin-top, 54, 43, 520, 740);
+    font-size: 30px;
+  }
+  .social_medias-ul {
+    margin-top: 30;
+    //@include responsive(margin-right, auto, 471, 520, 740)
+  }
+}
+
+@media screen and (min-width: 740px) {
+  .contacts-div {
+    text-align: left;
+    position: relative;
+  }
+  .contacts-h {
+    @include responsive(font-size, 100, 150, 740, 1000);
+    @include responsive(margin-top, 106, 80, 740, 1000);
+    @include responsive(margin-right, 142, 96, 740, 1000);
+    @include responsive(margin-bottom, 60, 80, 740, 1000);
+    @include responsive(margin-left, 142, 96, 740, 1000);
+  }
+  .contacts-div-container {
+    padding-top: 73;
+    @include responsive(padding-right, 60, 250, 740, 1000);
+    @include responsive(padding-bottom, 73, 96, 740, 1000);
+    @include responsive(padding-left, 67, 37, 740, 1000);
+  }
+  .contacts-div-h {
+    font-size: 50;
+    margin-bottom: 74;
+  }
+  .contacts-div-write_btn {
+    width: 260;
+    padding-right: 35;
+    padding-left: 35;
+    margin-top: 7;
+  }
+  .contacts-div-social_media {
+    margin-top: 43;
+  }
+  .contacts-backJT_svg {
+    display: block;
+    position: absolute;
+    width: 600px;
+    @include responsive(height, 450, 500, 740, 1000);
+    bottom: -50;
+    right: -130;
+  }
+  .social_medias-ul {
+    margin: 0;
+    margin-top: 30;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .contacts-h {
+    @include responsive(font-size, 150, 160, 1000, 1440);
+    @include responsive(margin-top, 80, 99, 1000, 1440);
+    @include responsive(margin-right, 96, 124, 71000, 1440);
+    margin-bottom: 80;
+    @include responsive(margin-left, 96, 124, 1000, 1440);
+  }
+  .contacts-div-container {
+    padding-top: 73;
+    @include responsive(padding-right, 250, 141, 1000, 1440);
+    @include responsive(padding-bottom, 96, 84, 1000, 1440);
+    @include responsive(padding-left, 37, 140, 1000, 1440);
+  }
+  .contacts-backJT_svg {
+    @include responsive(width, 600, 800, 1000, 1440);
+    @include responsive(height, 500, 750, 1000, 1440);
+    bottom: -60;
+    right: -100;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contacts-h {
+    font-size: 160;
+    margin-top: 99;
+    margin-right: 124;
+    margin-left: 124;
+  }
+  .contacts-div-container {
+    padding-top: 73;
+    padding-right: 141;
+    padding-bottom: 84;
+    padding-left: 140;
+  }
+  .contacts-backJT_svg {
+    width: 800px;
+    height: 750px;
+    bottom: -100;
+    right: -100;
+  }
+}
