@@ -14,90 +14,88 @@ button {
   @include responsive(padding-top, 46, 65, 420, 520);
   @include responsive(padding-right, 46, 27, 420, 520);
   @include responsive(padding-bottom, 46, 65, 420, 520);
-}
-.application-container {
-  margin: 0 auto;
-  box-sizing: border-box;
-  @include responsive(max-width, 329, 467, 420, 520);
-  width: 100%;
-}
-.application-title {
-  @include responsive(max-width, 312, 422, 420, 520);
-}
-.application-title,
-.application-text {
-  margin: 0 auto;
-  font-weight: 800;
-  @include responsive(font-size, 27, 35, 420, 520);
-  line-height: 1.2;
-}
-.application-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  @include responsive(margin-top, 68, 65, 420, 520);
-  @include responsive(margin-bottom, 68, 65, 420, 520);
-}
-.application-name {
-    font-family: 'Gilroy', sans-serif;
-  @include responsive(width, 300, 480, 420, 520);
-  @include responsive(padding-bottom, 28, 30, 420, 520);
-  @include responsive(font-size, 20, 25, 420, 520);
-  font-weight: 800;
-  line-height: 1.3;
-  background: transparent;
-  outline: transparent;
-  border: none;
-  border-bottom: 1px solid #fafafa;
-
-  color: #b7b8bc;
-}
-.application-tel {
-    font-family: 'Gilroy', sans-serif;
-  @include responsive(margin-top, 45, 50, 420, 520);
-  @include responsive(width, 300, 480, 420, 520);
-  @include responsive(padding-bottom, 28, 30, 420, 520);
-  @include responsive(font-size, 20, 25, 420, 520);
-  font-weight: 800;
-  line-height: 1.3;
-  background: transparent;
-  outline: transparent;
-  border: none;
-  border-bottom: 1px solid #fafafa;
-
-  color: #b7b8bc;
-}
-.application-submit {
-  @include responsive(margin-top, 45, 50, 420, 520);
-  @include responsive(width, 300, 461, 420, 520);
-  height: 58px;
-  text-align: center;
-  font-family: 'Gilroy', sans-serif;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.3;
-  background-color: #c12023;
-  color: #fafafa;
-  border-radius: 29px;
-  &:hover {
-    background-color: #df2528;
+  // * subclass
+  &_container {
+    margin: 0 auto;
+    box-sizing: border-box;
+    @include responsive(max-width, 329, 467, 420, 520);
+    width: 100%;
   }
-}
-.application-contact-tel {
-  display: block;
-  max-width: 298px;
-  color: #c12023;
-  margin: 0 auto;
-  & > a:hover {
-    color: #df2528;
+  &_title {
+    @include responsive(max-width, 312, 422, 420, 520);
   }
-}
-.contact-application-text {
-  @include responsive(max-width, 298, 384, 420, 520);
-}
-.contact-application {
-  @include responsive(max-width, 298, 467, 420, 520);
-  margin: 0 auto;
+  &_title,
+  &_text {
+    margin: 0 auto;
+    font-weight: 800;
+    @include responsive(font-size, 27, 35, 420, 520);
+    line-height: 1.2;
+  }
+  &_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include responsive(margin-top, 68, 65, 420, 520);
+    @include responsive(margin-bottom, 68, 65, 420, 520);
+  }
+  &_name {
+      font-family: 'Gilroy', sans-serif;
+    @include responsive(width, 300, 480, 420, 520);
+    @include responsive(padding-bottom, 28, 30, 420, 520);
+    @include responsive(font-size, 20, 25, 420, 520);
+    font-weight: 800;
+    line-height: 1.3;
+    background: transparent;
+    outline: transparent;
+    border: none;
+    border-bottom: 1px solid #fafafa;
+  
+    color: #b7b8bc;
+  }
+  &_tel {
+      font-family: 'Gilroy', sans-serif;
+    @include responsive(margin-top, 45, 50, 420, 520);
+    @include responsive(width, 300, 480, 420, 520);
+    @include responsive(padding-bottom, 28, 30, 420, 520);
+    @include responsive(font-size, 20, 25, 420, 520);
+    font-weight: 800;
+    line-height: 1.3;
+    background: transparent;
+    outline: transparent;
+    border: none;
+    border-bottom: 1px solid #fafafa;
+  
+    color: #b7b8bc;
+  }
+  &_submit {
+    @include responsive(margin-top, 45, 50, 420, 520);
+    @include responsive(width, 300, 461, 420, 520);
+    height: 58px;
+    text-align: center;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.3;
+    background-color: #c12023;
+    color: #fafafa;
+    border-radius: 29px;
+    &:hover {
+      background-color: #df2528;
+    }
+  }
+  &_contact-tel {
+    display: block;
+    max-width: 298px;
+    color: #c12023;
+    margin: 0 auto;
+    & > a:hover {
+      color: #df2528;
+    }
+  }
+  &_contact {
+    @include responsive(max-width, 298, 467, 420, 520);
+    margin: 0 auto;
+  }
 }
 @media (min-width: 520px) {
   .application {
@@ -105,40 +103,41 @@ button {
     @include responsive(padding-top, 65, 60, 520, 740);
     @include responsive(padding-right, 27, 45, 520, 740);
     @include responsive(padding-bottom, 65, 60, 520, 740);
-  }
-  .application-container {
-    @include responsive(max-width, 467, 649, 520, 740);
-  }
-  .application-title {
-    @include responsive(max-width, 422, 649, 520, 740);
-  }
-  .application-title,
-  .application-text {
-    @include responsive(font-size, 35, 40, 520, 740);
-  }
-  .application-name,
-  .application-tel {
-    @include responsive(width, 480, 620, 520, 740);
-    @include responsive(padding-bottom, 30, 30, 520, 740);
-    @include responsive(font-size, 25, 25, 520, 740);
-    line-height: 1.2;
-  }
-  .application-tel{
-    @include responsive(margin-top, 50, 50, 520, 740);
-  }
-  .application-form {
-    @include responsive(margin-top, 65, 66, 520, 740);
-    @include responsive(margin-bottom, 65, 67, 520, 740);
-  }
-  .application-submit {
-    @include responsive(margin-top, 50, 50, 520, 740);
-    @include responsive(width, 461, 621, 520, 740);
-  }
-  .application-contact-tel {
-    @include responsive(max-width, 298, 428, 520, 740);
-  }
-  .contact-application {
-    @include responsive(max-width, 298, 593, 520, 740);
+    //* subclass
+    &_container {
+      @include responsive(max-width, 467, 649, 520, 740);
+    }
+    &_title {
+      @include responsive(max-width, 422, 649, 520, 740);
+    }
+    &_title,
+    &_text {
+      @include responsive(font-size, 35, 40, 520, 740);
+    }
+    &_name,
+    &_tel {
+      @include responsive(width, 480, 620, 520, 740);
+      @include responsive(padding-bottom, 30, 30, 520, 740);
+      @include responsive(font-size, 25, 25, 520, 740);
+      line-height: 1.2;
+    }
+    &_tel{
+      @include responsive(margin-top, 50, 50, 520, 740);
+    }
+    &_form {
+      @include responsive(margin-top, 65, 66, 520, 740);
+      @include responsive(margin-bottom, 65, 67, 520, 740);
+    }
+    &_submit {
+      @include responsive(margin-top, 50, 50, 520, 740);
+      @include responsive(width, 461, 621, 520, 740);
+    }
+    &_contact-tel {
+      @include responsive(max-width, 298, 428, 520, 740);
+    }
+    &_contact {
+      @include responsive(max-width, 298, 593, 520, 740);
+    }
   }
 }
 @media (min-width: 740px) {
@@ -147,41 +146,42 @@ button {
     @include responsive(padding-top, 60, 70, 740, 1000);
     @include responsive(padding-right, 45, 33, 740, 1000);
     @include responsive(padding-bottom, 60, 70, 740, 1000);
-  }
-  .application-container {
-    @include responsive(max-width, 649, 940, 740, 1000);
-  }
-  .application-title {
-    @include responsive(max-width, 649, 811, 740, 1000);
-  }
-  .application-title,
-  .application-text {
-    @include responsive(font-size, 40, 50, 740, 1000);
-  }
-  .application-form {
-    @include responsive(margin-top,66, 85 , 740, 1000);
-    @include responsive(margin-bottom, 67, 85, 740, 1000);
-  }
-  .application-name,
-  .application-tel {
-    line-height: 1.2;
-    @include responsive(width, 620, 811, 740, 1000);
-    @include responsive(padding-bottom, 30, 30, 740, 1000);
-    @include responsive(font-size, 25, 25, 740, 1000);
-  }
-  .application-tel{
-    @include responsive(margin-top, 50, 50, 740, 1000);
-  }
-  .application-submit {
-    @include responsive(margin-top, 50, 50, 740, 1000);
-    @include responsive(width, 621, 800, 740, 1000);
-    @include responsive(font-size, 20, 20, 740, 1000);
-  }
-  .application-contact-tel {
-    @include responsive(max-width, 428, 811, 740, 1000);
-  }
-  .contact-application {
-    @include responsive(max-width, 520, 811, 740, 1000);
+    // * subclass
+    &_container {
+      @include responsive(max-width, 649, 940, 740, 1000);
+    }
+    &_title {
+      @include responsive(max-width, 649, 811, 740, 1000);
+    }
+    &_title,
+    &_text {
+      @include responsive(font-size, 40, 50, 740, 1000);
+    }
+    &_form {
+      @include responsive(margin-top,66, 85 , 740, 1000);
+      @include responsive(margin-bottom, 67, 85, 740, 1000);
+    }
+    &_name,
+    &_tel {
+      line-height: 1.2;
+      @include responsive(width, 620, 811, 740, 1000);
+      @include responsive(padding-bottom, 30, 30, 740, 1000);
+      @include responsive(font-size, 25, 25, 740, 1000);
+    }
+    &_tel{
+      @include responsive(margin-top, 50, 50, 740, 1000);
+    }
+    &_submit {
+      @include responsive(margin-top, 50, 50, 740, 1000);
+      @include responsive(width, 621, 800, 740, 1000);
+      @include responsive(font-size, 20, 20, 740, 1000);
+    }
+    &_contact-tel {
+      @include responsive(max-width, 428, 811, 740, 1000);
+    }
+    &_contactn {
+      @include responsive(max-width, 520, 811, 740, 1000);
+    }
   }
 }
 @media (min-width: 1000px) {
@@ -191,104 +191,106 @@ button {
     @include responsive(padding-right, 33, 139, 1000, 1440);
     @include responsive(padding-bottom, 70, 73, 1000, 1440);
     text-align: start;
-  }
-  .application-container {
-    @include responsive(max-width, 940, 1159, 1000, 1440);
-  }
-  .application-title {
-    @include responsive(max-width, 811, 1159, 1000, 1000);
-    margin: 0;
-  }
-  .application-title,
-  .application-text {
-    @include responsive(font-size, 50, 50, 1000, 1440);
-    margin: 0;
-  }
-  .application-form {
-    @include responsive(margin-top, 100, 90, 1000, 1440);
-    @include responsive(margin-bottom, 85, 90, 1000, 1440);
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
-  }
-  .application-name {
-    @include responsive(margin-right, 66, 40, 1000, 1440);
-  }
-  .application-tel {
-    @include responsive(margin-right, 58, 40, 1000, 1440);
-  }
-  .application-name,
-  .application-tel {
-    @include responsive(width, 258, 360, 1000, 1440);
-    @include responsive(margin-top, 0, 0, 1000, 1440);
-    @include responsive(padding-bottom, 22, 22, 1000, 1440);
-    @include responsive(font-size, 25, 18, 1000, 1440);
-    line-height: 1.3;
-  }
-  .application-submit {
-    @include responsive(margin-top, 0, 0, 1000, 1440);
-    @include responsive(width, 300, 364, 1000, 1440);
-    @include responsive(font-size, 16, 18, 1000, 1440);
-    height: 58px;
-    text-align: center;
-    font-weight: 800;
-    line-height: 1.3;
-  }
-  .application-contact-tel {
-    display: inline;
-    @include responsive(max-width, 811, 1058, 1000, 1440);
-    color: #c12023;
-    margin: 0;
-  }
-  .contact-application {
-    @include responsive(max-width, 811, 1058, 1000, 1440);
-    @include responsive(margin, 0, 0, 740, 1000);
+    // * subclass
+    &_container {
+      @include responsive(max-width, 940, 1159, 1000, 1440);
+    }
+    &_title {
+      @include responsive(max-width, 811, 1159, 1000, 1000);
+      margin: 0;
+    }
+    &_title,
+    &_text {
+      @include responsive(font-size, 50, 50, 1000, 1440);
+      margin: 0;
+    }
+    &_form {
+      @include responsive(margin-top, 100, 90, 1000, 1440);
+      @include responsive(margin-bottom, 85, 90, 1000, 1440);
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    &_name {
+      @include responsive(margin-right, 66, 40, 1000, 1440);
+    }
+    &_tel {
+      @include responsive(margin-right, 58, 40, 1000, 1440);
+    }
+    &_name,
+    &_tel {
+      @include responsive(width, 258, 360, 1000, 1440);
+      @include responsive(margin-top, 0, 0, 1000, 1440);
+      @include responsive(padding-bottom, 22, 22, 1000, 1440);
+      @include responsive(font-size, 25, 18, 1000, 1440);
+      line-height: 1.3;
+    }
+    &_submit {
+      @include responsive(margin-top, 0, 0, 1000, 1440);
+      @include responsive(width, 300, 364, 1000, 1440);
+      @include responsive(font-size, 16, 18, 1000, 1440);
+      height: 58px;
+      text-align: center;
+      font-weight: 800;
+      line-height: 1.3;
+    }
+    &_contact-tel {
+      display: inline;
+      @include responsive(max-width, 811, 1058, 1000, 1440);
+      color: #c12023;
+      margin: 0;
+    }
+    &_contact {
+      @include responsive(max-width, 811, 1058, 1000, 1440);
+      @include responsive(margin, 0, 0, 740, 1000);
+    }
   }
 }
 @media (min-width: 1440px) {
   .application {
     padding: 73px,139px;
-  }
-  .application-container {
-    max-width: 1159px;
-  }
-  .application-title {
-    max-width: 1159px;
-  }
-  .application-title,
-  .application-text {
-    font-size: 50px;
-  }
-  .application-form {
-    margin-top: 90px;
-    margin-bottom: 90px;
-    justify-content: flex-start;
-  }
-  .application-name {
-    margin-right: 40px;
-  }
-  .application-tel {
-    margin-right: 40px;
-  }
-  .application-name,
-  .application-tel {
-    width: 360px;
-    margin-top: 0;
-    padding-bottom: 22px;
-    font-size: 18;
-    line-height: 1.2;
-  }
-  .application-submit {
-    margin-top: 0;
-    width: 364px;
-    font-size: 18;
-    line-height: 1.2;
-  }
-  .application-contact-tel {
-    min-width: 1058px;
-  }
-  .contact-application {
-    min-width: 1058px;
-    margin: 0;
+    // * subclass
+    &_container {
+      max-width: 1159px;
+    }
+    &_title {
+      max-width: 1159px;
+    }
+    &_title,
+    &_text {
+      font-size: 50px;
+    }
+    &_form {
+      margin-top: 90px;
+      margin-bottom: 90px;
+      justify-content: flex-start;
+    }
+    &_name {
+      margin-right: 40px;
+    }
+    &_tel {
+      margin-right: 40px;
+    }
+    &_name,
+    &_tel {
+      width: 360px;
+      margin-top: 0;
+      padding-bottom: 22px;
+      font-size: 18;
+      line-height: 1.2;
+    }
+    &_submit {
+      margin-top: 0;
+      width: 364px;
+      font-size: 18;
+      line-height: 1.2;
+    }
+    &_contact-tel {
+      min-width: 1058px;
+    }
+    &_contact {
+      min-width: 1058px;
+      margin: 0;
+    }
   }
 }
