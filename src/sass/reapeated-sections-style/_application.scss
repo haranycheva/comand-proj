@@ -88,7 +88,7 @@ button {
   max-width: 298px;
   color: #c12023;
   margin: 0 auto;
-  &:hover {
+  & > a:hover {
     color: #df2528;
   }
 }
@@ -239,9 +239,6 @@ button {
     @include responsive(max-width, 811, 1058, 1000, 1440);
     color: #c12023;
     margin: 0;
-    &:hover {
-      color: #df2528;
-    }
   }
   .contact-application {
     @include responsive(max-width, 811, 1058, 1000, 1440);
