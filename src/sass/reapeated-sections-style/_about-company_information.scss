@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   @include responsive(row-gap, 40, 60, 420, 520);
-  @include responsive(padding-top, 40, 50, 420, 520);  
+  @include responsive(padding-top, 40, 50, 420, 520);
   padding-bottom: 60px;
   // * subclass
   &_title {
@@ -12,6 +12,34 @@
     line-height: 0.8;
     color: #131926;
   }
+
+  &_subtitle {
+    display: flex;
+    @include responsive(margin-left, 60, 30, 420, 520);
+    column-gap: 10px;
+  }
+
+  &_subtitle-first {
+    @include responsive(font-size, 16, 20, 420, 520);
+    font-weight: 800;
+    line-height: 0.8;
+    color: #131926;
+  }
+  &_subtitle-second {
+    font-weight: 800;
+    @include responsive(font-size, 16, 20, 420, 520);
+    line-height: 0.8;
+    @include responsive(max-width, 140, 350, 420, 520);
+    color: #131926;
+  }
+  &_subtitle-first::after {
+    content: url(../svg/pointer-right.svg);
+    display: inline-block;
+    margin-left: 10px;
+    width: 12px;
+    height: 12px;
+  }
+
   &_pictures-first > img {
     width: 100%;
   }
@@ -46,6 +74,18 @@
     @include responsive(padding-top, 50, 60, 520, 740);
     padding-bottom: 60px;
     // * subclass
+    &_subtitle {
+      @include responsive(margin-left, 30, 61, 520, 740);
+    }
+
+    &_subtitle-first {
+      @include responsive(font-size, 20, 23, 520, 740);
+    }
+    &_subtitle-second {
+      @include responsive(font-size, 20, 23, 520, 740);
+      max-width: 350px;
+    }
+
     &_title {
       @include responsive(font-size, 75, 100, 520, 740);
     }
@@ -73,6 +113,17 @@
     @include responsive(padding-top, 60, 80, 740, 1000);
     @include responsive(padding-bottom, 60, 100, 740, 1000);
     // * subclass
+    &_subtitle {
+      @include responsive(margin-left, 61, 30, 740, 1000);
+    }
+
+    &_subtitle-first {
+      font-size: 23px;
+    }
+    &_subtitle-second {
+      font-size: 23px;
+    }
+
     &_title {
       @include responsive(font-size, 100, 150, 740, 1000);
     }
@@ -100,23 +151,28 @@
     padding-bottom: 100px;
     // * subclass
     &_title {
-    @include responsive(font-size, 100, 150, 740, 1000);
-  }
-  &_information {
-    @include responsive(padding-left, 59, 29, 740, 1000);
-  }
-  &_text {
-    @include responsive(font-size, 23, 25, 740, 1000);
-    &:nth-child(1) {
-      @include responsive(max-width, 597, 884, 740, 1000);
+      @include responsive(font-size, 100, 150, 1000, 1440);
     }
-    &:nth-child(2) {
-      @include responsive(max-width, 621, 884, 740, 1000);
+
+    &_subtitle {
+      @include responsive(margin-left, 30,140, 1000, 1440);
     }
-    &:nth-child(3) {
-      @include responsive(max-width, 619, 861, 740, 1000);
+
+    &_information {
+      @include responsive(padding-left, 59, 29, 1000, 1440);
     }
-  }
+    &_text {
+      @include responsive(font-size, 23, 25, 1000, 1440);
+      &:nth-child(1) {
+        @include responsive(max-width, 597, 884, 1000, 1440);
+      }
+      &:nth-child(2) {
+        @include responsive(max-width, 621, 884, 1000, 1440);
+      }
+      &:nth-child(3) {
+        @include responsive(max-width, 619, 861, 1000, 1440);
+      }
+    }
   }
 }
 @media (min-width: 1440px) {
@@ -127,6 +183,9 @@
     // * subclass
     &_title {
       font-size: 185px;
+    }
+    &_subtitle{
+      margin-left: 140px;
     }
     &_information {
       padding-left: 141px;
