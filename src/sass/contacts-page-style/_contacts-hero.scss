@@ -4,7 +4,7 @@
   color: #fafafa;
   line-height: 1.2;
 }
-.contacts-h {
+.contacts__h {
   @include responsive(font-size, 53, 75, 420, 520);
   @include responsive(margin-top, 60, 52, 420, 520);
   @include responsive(margin-right, 59, 85, 420, 520);
@@ -23,19 +23,19 @@
   @include responsive(padding-bottom, 40, 73, 420, 520);
   @include responsive(padding-left, 47, 10, 420, 520);
 }
-.contacts-div-h {
+.contacts-div__h {
   font-weight: 800;
   @include responsive(font-size, 25, 37, 420, 520);
   @include responsive(margin-bottom, 46, 55, 420, 520);
   line-height: 1.2;
 }
-.contacts-div-h-span {
+.contacts-div__h-span {
   color: #df2528;
   display: block;
 }
-.contacts-div-adress,
-.contacts-div-tel,
-.contacts-div-email {
+.contacts-div__adress,
+.contacts-div__tel,
+.contacts-div__email {
   @include responsive(font-size, 20, 30, 420, 520);
   margin-bottom: 35px;
 }
@@ -53,7 +53,7 @@
   color: #df2528;
 }
 
-.contacts-div-write_btn {
+.contacts-div__write-btn {
   @include responsive(width, 300, 459, 420, 520);
   padding-top: 22px;
   @include responsive(padding-right, 56, 134, 420, 520);
@@ -67,14 +67,14 @@
   border-radius: 29px;
   font-weight: 800;
 }
-.contacts-div-write_btn:hover {
+.contacts-div__write-btn:hover {
   background-color: #df2528;
 }
-.contacts-div-social_media {
+.contacts-div__social-media {
   @include responsive(margin-top, 37, 54, 420, 520);
   @include responsive(font-size, 23, 30, 420, 520);
 }
-.social_medias-ul {
+.social-medias-ul {
   width: 242px;
   display: flex;
   gap: 30px;
@@ -82,67 +82,67 @@
   @include responsive(margin-top, 27, 30, 420, 520);
 }
 
-.social_medias-ul-item_div {
+.social-medias-ul__item-div {
   width: 38px;
   height: 38px;
   background-color: #d9d9d9;
   border-radius: 50%;
 }
 
-.social_medias-ul-item-Inst {
+.social-medias-ul__item-Inst {
   width: 20px;
   height: 20px;
   margin: 9px;
 }
-.social_medias-ul-item-Wk {
+.social-medias-ul__item-Wk {
   width: 24px;
   height: 16px;
   margin: 11px 7px;
 }
-.social_medias-ul-item-YouTube {
+.social-medias-ul__item-YouTube {
   width: 22px;
   height: 17px;
   margin: 11px 8px 10px 8px;
 }
-.social_medias-ul-item-D2 {
+.social-medias-ul__item-D2 {
   width: 18px;
   height: 17px;
   margin: 10px 11px;
 }
 
-.social_medias-ul-item_div1:hover {
+.social-medias-ul__item-div1:hover {
   background-color: #a06c6d;
 }
-.social_medias-ul-item_div1:hover .social_medias-ul-item-Inst {
+.social-medias-ul__item-div1:hover .social-medias-ul__item-Inst {
   fill: #fafafa;
 }
 
-.social_medias-ul-item_div2:hover {
+.social-medias-ul__item-div2:hover {
   background-color: #0079fa;
 }
-.social_medias-ul-item_div2:hover .social_medias-ul-item-Wk {
+.social-medias-ul__item-div2:hover .social-medias-ul__item-Wk {
   fill: #fafafa;
 }
 
-.social_medias-ul-item_div3:hover {
+.social-medias-ul__item-div3:hover {
   background-color: #df2528;
 }
-.social_medias-ul-item_div3:hover .social_medias-ul-item-YouTube {
+.social-medias-ul__item-div3:hover .social-medias-ul__item-YouTube {
   fill: #fafafa;
 }
 
-.social_medias-ul-item_div4:hover {
+.social-medias-ul__item-div4:hover {
   background-color: #df2528;
 }
-.social_medias-ul-item_div4:hover .social_medias-ul-item-D2 {
+.social-medias-ul__item-div4:hover .social-medias-ul__item-D2 {
   fill: #fafafa;
 }
-.contacts-backJT_svg {
+.contacts__backJT-svg {
   display: none;
 }
 
 @media screen and (min-width: 520px) {
-  .contacts-h {
+  .contacts__h {
     @include responsive(font-size, 75, 100, 520, 740);
     @include responsive(margin-top, 52, 106, 520, 740);
     @include responsive(margin-right, 85, 142, 520, 740);
@@ -155,23 +155,23 @@
     padding-bottom: 73;
     @include responsive(padding-left, 10, 67, 520, 740);
   }
-  .contacts-div-h {
+  .contacts-div__h {
     @include responsive(font-size, 37, 50, 520, 740);
     @include responsive(margin-bottom, 55, 74, 520, 740);
   }
-  .contacts-div-adress,
-  .contacts-div-tel,
-  .contacts-div-email {
+  .contacts-div__adress,
+  .contacts-div__tel,
+  .contacts-div__email {
     font-size: 30;
   }
-  .contacts-div-write_btn {
+  .contacts-div__write-btn {
     @include responsive(width, 459, 260, 520, 740);
     @include responsive(padding-right, 134, 35, 520, 740);
 
     @include responsive(padding-left, 135, 35, 520, 740);
     @include responsive(margin-top, 20, 7, 520, 740);
   }
-  .contacts-div-social_media {
+  .contacts-div__social-media {
     @include responsive(margin-top, 54, 43, 520, 740);
     font-size: 30px;
   }
@@ -186,7 +186,7 @@
     text-align: left;
     position: relative;
   }
-  .contacts-h {
+  .contacts__h {
     @include responsive(font-size, 100, 150, 740, 1000);
     @include responsive(margin-top, 106, 80, 740, 1000);
     @include responsive(margin-right, 142, 96, 740, 1000);
@@ -199,20 +199,20 @@
     @include responsive(padding-bottom, 73, 96, 740, 1000);
     @include responsive(padding-left, 67, 37, 740, 1000);
   }
-  .contacts-div-h {
+  .contacts-div__h {
     font-size: 50;
     margin-bottom: 74;
   }
-  .contacts-div-write_btn {
+  .contacts-div__write-btn {
     width: 260;
     padding-right: 35;
     padding-left: 35;
     margin-top: 7;
   }
-  .contacts-div-social_media {
+  .contacts-div__social-media {
     margin-top: 43;
   }
-  .contacts-backJT_svg {
+  .contacts__backJT-svg {
     display: block;
     position: absolute;
     width: 600px;
@@ -220,7 +220,7 @@
     bottom: -50;
     right: -130;
   }
-  .social_medias-ul {
+  .social-medias-ul {
     margin: 0;
     margin-top: 30;
   }
