@@ -1,0 +1,406 @@
+.hero {
+  background: #fafafa;
+  display: block;
+  margin: 0 auto;
+  width: 100vw;
+}
+.addition-cards {
+  display: none;
+}
+.filter-btn {
+  background: transparent;
+  border: none;
+  font-weight: 800;
+  padding: 16px 0;
+  text-align: center;
+  width: 100%;
+  border: 2px solid #131926;
+  border-radius: 29px;
+  height: 49px;
+}
+.filter-btn:hover{
+  color: #FAFAFA;
+  background-color: #C12023;
+  border: transparent;
+
+}
+.filter-btn-bigger-type{
+  padding: 19px 0;
+  width: 100%;
+}
+.show-more-btn:hover{
+  color: #FAFAFA;
+  background-color: #C12023;
+}
+.hero-container {
+  text-align: center;
+  @include responsive(max-width, 420, 520, 420, 520);
+  @include responsive(padding-top, 40, 50, 420, 520);
+  padding-right: 29px;
+  padding-left: 29px;
+  margin: 0 auto;
+  @include responsive(padding-bottom, 80, 130, 420, 520);
+}
+.hero-title {
+  font-weight: 800;
+  @include responsive(font-size, 90, 73, 420, 520);
+  line-height: 1.2;
+}
+.cars-card + .cars-card {
+  @include responsive(margin-top, 30, 40, 420, 520);
+}
+.filter {
+  width: 100%;
+  text-align: center;
+  background-color: #df2528;
+  font-weight: 800;
+  color: #ffffff;
+  border: 2px solid #df2528;
+  font-size: 20px;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  appearance: none;
+}
+.option-list {
+  display: flex;
+  flex-wrap: wrap;
+  @include responsive(row-gap, 18, 20, 1000, 1440);
+  @include responsive(column-gap, 20, 24, 1000, 1440);
+  text-align: center;
+  justify-content: center;
+  display: none;
+
+}
+.option-list-item {
+  border-radius: 29px;
+  background-color: transparent;
+  font-weight: 800;
+  font-size: 14px;
+  width: 147px;
+  line-height: 0.7;
+  line-height: 1.2;
+  height: 49px;
+}
+
+.active {
+  color: #fafafa;
+  background-color: #df2528;
+  border: none;
+}
+.option-list-item-bigger-type {
+  width: 200px;
+}
+.filter-btn-instal-option{
+  padding: 5px 0;
+}
+.option-list-item-instal {
+  width: 237px;
+}
+.filter-btn-tech-update-type{
+    padding: 16px 0;
+}
+.option-list-item-tech {
+  width: 274px;
+}
+.select-filter {
+  margin-left: auto;
+  margin-right: auto;
+  @include responsive(width, 300, 460, 420, 520);
+  margin-top: 40px;
+  position: relative;
+}
+.select-filter::after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  @include responsive(width, 17, 21, 420, 520);
+  @include responsive(height, 9, 12, 420, 520);
+  background: url(/src/svg/pointer-down.svg);
+  @include responsive(right, 35, 26, 420, 520);
+  top: 29px;
+  background-repeat: no-repeat;
+}
+.cars-cads-list {
+  @include responsive(margin-top, 30, 50, 420, 520);
+  @include responsive(width, 293, 457, 420, 520);
+  margin-left: auto;
+  margin-right: auto;
+}
+.order-information {
+  @include responsive(padding-top, 28, 51, 420, 520);
+  @include responsive(padding-right, 47, 143, 420, 520);
+  @include responsive(padding-left, 27, 33, 420, 520);
+  @include responsive(padding-bottom, 28, 50, 420, 520);
+}
+.cars-card {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px #eeeeee;
+  border-radius: 20px;
+  text-align: left;
+}
+.date {
+  font-weight: 800;
+  @include responsive(font-size, 10, 14, 420, 520);
+  color: #b7b8bc;
+}
+.proces-name {
+  font-weight: 800;
+  font-size: 14px;
+  @include responsive(margin-top, 17, 25, 420, 520);
+  @include responsive(font-size, 14, 20, 420, 520);
+  color: #b7b8bc;
+}
+.car-name {
+  color: #131926;
+  font-weight: 800;
+  @include responsive(margin-top, 17, 26, 420, 520);
+  @include responsive(font-size, 20, 30, 420, 520);
+}
+.car-picture {
+  width: 100%;
+}
+.show-more-btn {
+  background: #131926;
+  border-radius: 29px;
+  margin-top: 40px;
+  color: #fafafa;
+  font-weight: 800;
+  font-size: 14px;
+  padding: 18px 76px 18px 75px;
+  border: none;
+}
+@media screen and (min-width: 520px) {
+  .addition-cards {
+    display: block;
+  }
+  .hero-container {
+    @include responsive(max-width, 520, 740, 520, 740);
+    @include responsive(padding-top, 50, 60, 520, 740);
+    padding-right: 32px;
+    padding-left: 31px;
+    @include responsive(padding-bottom, 130, 130, 520, 740);
+  }
+  .cars-cads-list {
+    @include responsive(width, 457, 500, 520, 740);
+  }
+
+  .hero-title {
+    @include responsive(font-size, 73, 100, 520, 740);
+  }
+  .cars-card + .cars-card {
+    margin-top: 40;
+  }
+  .select-filter {
+    @include responsive(width, 460, 620, 520, 740);
+    @include responsive(margin-top, 40, 59, 520, 740);
+  }
+  .select-filter::after {
+    @include responsive(width, 21, 21, 520, 740);
+    @include responsive(height, 12, 12, 520, 740);
+    @include responsive(right, 26, 26, 520, 740);
+    @include responsive(top, 27, 28, 520, 740);
+  }
+  .order-information {
+    padding-top: 52px;
+    @include responsive(padding-right, 143, 143, 520, 740);
+    @include responsive(padding-left, 33, 50, 520, 740);
+    @include responsive(padding-bottom, 50, 73, 520, 740);
+  }
+  .date {
+    font-size: 14px;
+  }
+  .proces-name {
+    @include responsive(margin-top, 17, 25, 520, 740);
+    font-size: 20px;
+  }
+  .car-name {
+    margin-top: 26px;
+    font-size: 30px;
+  }
+  .show-more-btn {
+    @include responsive(margin-top, 40, 60, 520, 740);
+  }
+}
+@media screen and (min-width: 740px) {
+  .hero-container {
+    @include responsive(max-width, 740, 1000, 740, 1000);
+    @include responsive(padding-top, 60, 80, 740, 1000);
+    @include responsive(padding-right, 54, 29, 740, 1000);
+    @include responsive(padding-left, 54, 35, 740, 1000);
+    @include responsive(padding-bottom, 130, 173, 740, 1000);
+  }
+  .cars-cads-list {
+    @include responsive(margin-top, 40, 80, 740, 1000);
+    @include responsive(width, 619, 937, 740, 1000);
+    display: flex;
+    flex-wrap: wrap;
+    @include responsive(row-gap, 25, 35, 740, 1000);
+    @include responsive(column-gap, 31, 23, 740, 1000);
+  }
+  .cars-card {
+    @include responsive(width, 293, 457, 740, 1000);
+  }
+  .cars-card + .cars-card {
+    margin-top: 0;
+  }
+  .hero-title {
+    @include responsive(font-size, 100, 148, 740, 1000);
+  }
+  .select-filter {
+    width: 100%;
+    @include responsive(margin-top, 40, 59, 740, 1000);
+  }
+  .select-filter::after {
+    width: 21px;
+    height: 12px;
+    right: 26px;
+    top: 28px;
+  }
+  .order-information {
+    @include responsive(padding-top, 28, 51, 740, 1000);
+    @include responsive(padding-right, 47, 143, 740, 1000);
+    @include responsive(padding-left, 27, 33, 740, 1000);
+    @include responsive(padding-bottom, 28, 50, 740, 1000);
+  }
+  .BMW-info {
+    @include responsive(padding-bottom, 48, 80, 740, 1000);
+  }
+  .date {
+    @include responsive(font-size, 10, 14, 740, 1000);
+  }
+  .proces-name {
+    font-weight: 800;
+    font-size: 14px;
+    @include responsive(margin-top, 17, 25, 740, 1000);
+    @include responsive(font-size, 14, 20, 740, 1000);
+    color: #b7b8bc;
+  }
+  .car-name {
+    @include responsive(margin-top, 17, 26, 740, 1000);
+    @include responsive(font-size, 20, 30, 740, 1000);
+  }
+  .show-more-btn {
+    margin-top: 60px;
+    @include responsive(font-size, 14, 16, 740, 1000);
+    @include responsive(padding-top, 22, 24, 740, 1000);
+    @include responsive(padding-right, 76, 62, 740, 1000);
+    @include responsive(padding-left, 75, 61, 740, 1000);
+    @include responsive(padding-bottom, 22, 23, 740, 1000);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .hero-container {
+    @include responsive(max-width, 1000, 1440, 1000, 1440);
+    @include responsive(padding-top, 80, 100, 1000, 1440);
+    @include responsive(padding-right, 26, 135, 1000, 1440);
+    @include responsive(padding-left, 26, 136, 1000, 1440);
+    @include responsive(padding-bottom, 130, 150, 1000, 1440);
+  }
+  .hero-title {
+    @include responsive(font-size, 150, 185, 1000, 1440);
+  }
+  .select-filter {
+    display: none;
+  }
+  .option-list {
+    display: flex;
+    margin-top: 80px;
+  }
+  .cars-cads-list {
+    margin-top: 80px;
+    @include responsive(width, 937, 761, 1000, 1440);
+    @include responsive(row-gap, 35, 60, 1000, 1440);
+    @include responsive(column-gap, 23, 40, 1000, 1440);
+  }
+  .cars-card {
+    @include responsive(width, 457, 360, 1000, 1440);
+  }
+  .order-information {
+    @include responsive(padding-top, 51, 31, 1000, 1440);
+    @include responsive(padding-right, 143, 115, 1000, 1440);
+    @include responsive(padding-left, 33, 26, 1000, 1440);
+    @include responsive(padding-bottom, 50, 41, 1000, 1440);
+  }
+  .BMW-info {
+    @include responsive(padding-bottom, 85, 70, 1000, 1440);
+  }
+  .date {
+    @include responsive(font-size, 14, 10, 1000, 1440);
+  }
+  .proces-name {
+    @include responsive(margin-top, 25, 22, 1000, 1440);
+    @include responsive(font-size, 20, 18, 1000, 1440);
+  }
+  .car-name {
+    @include responsive(margin-top, 26, 20, 1000, 1440);
+    @include responsive(font-size, 30, 25, 1000, 1440);
+  }
+  .show-more-btn {
+    @include responsive(font-size, 16, 18, 1000, 1440);
+    @include responsive(padding-top, 24, 22, 1000, 1440);
+    @include responsive(padding-right, 62, 55, 1000, 1440);
+    @include responsive(padding-left, 61, 55, 1000, 1440);
+    @include responsive(padding-bottom, 23, 23, 1000, 1440);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .option-list {
+    row-gap: 20px;
+    column-gap: 24px;
+    justify-content: start;
+  }
+  .hero-container {
+    max-width: 1440px;
+    padding-top: 100px;
+    padding-right: 135px;
+    padding-left: 135px;
+    padding-bottom: 150px;
+  }
+  .hero-title {
+    font-size: 185px;
+  }
+  .cars-cads-list {
+    width: 1160px;
+    row-gap: 60;
+    column-gap: 40;
+  }
+  .cars-card {
+    width: 360px;
+  }
+  .order-information {
+    padding-top: 31px;
+    padding-right: 115px;
+    padding-left: 26px;
+    padding-bottom: 41px;
+  }
+  .tlc-information {
+    padding-right: 36px;
+  }
+  .q50-information {
+    padding-right:58px ;
+    padding-bottom: 70px;
+  }
+  .BMW-info{
+    padding-bottom: 70px;
+  }
+  .date {
+    font-size: 14px;
+  }
+  .proces-name {
+    margin-top: 22px;
+    font-size: 18px;
+  }
+  .car-name {
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  .show-more-btn {
+    font-size: 18px;
+    padding-top: 22px;
+    padding-right: 55px;
+    padding-left: 55px;
+    padding-bottom: 23px;
+  }
+}
