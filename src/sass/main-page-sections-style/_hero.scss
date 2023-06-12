@@ -11,19 +11,17 @@
   background: transparent;
   border: none;
   font-weight: 800;
-  padding: 20px 0;
+  padding: 16px 0;
   text-align: center;
   width: 100%;
+  border: 2px solid #131926;
   border-radius: 29px;
-}
-.option-list-item:hover{
-  color: #FAFAFA;
-  background-color: #C12023;  
-  border: none;
+  height: 49px;
 }
 .filter-btn:hover{
   color: #FAFAFA;
   background-color: #C12023;
+  border: transparent;
 
 }
 .filter-btn-bigger-type{
@@ -75,7 +73,6 @@
 
 }
 .option-list-item {
-  border: 2px solid #131926;
   border-radius: 29px;
   background-color: transparent;
   font-weight: 800;
@@ -83,6 +80,7 @@
   width: 147px;
   line-height: 0.7;
   line-height: 1.2;
+  height: 49px;
 }
 
 .active {
@@ -94,13 +92,13 @@
   width: 200px;
 }
 .filter-btn-instal-option{
-  padding: 11px 0;
+  padding: 5px 0;
 }
 .option-list-item-instal {
   width: 237px;
 }
 .filter-btn-tech-update-type{
-    padding: 20px 0;
+    padding: 16px 0;
 }
 .option-list-item-tech {
   width: 274px;
