@@ -1,5 +1,5 @@
-header{
-  background-color: #FAFAFA;
+header {
+  background-color: #fafafa;
 }
 .logo {
   @include responsive(width, 60, 62, 420, 520);
@@ -41,10 +41,12 @@ header{
   border: transparent;
   padding-left: 34px;
   font-weight: 800;
+  background-color: transparent;
 }
 .search-form {
   display: none;
   position: relative;
+
   @include responsive(width, 141, 200, 1000, 1440);
 }
 .search::placeholder {
